@@ -1,0 +1,21 @@
+# Logs y Node modules
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compilados de producción
+dist
+dist-ssr
+*.local
+
+# Variables de entorno y llaves secretas
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Archivos del sistema y Firebase
+.firebase
+.DS_Store
