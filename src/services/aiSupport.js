@@ -9,7 +9,7 @@ export const AAB1_KNOWLEDGE_BASE = `
 - AAB1 es una empresa unipersonal boliviana debidamente registrada en Impuestos Nacionales y SEPREC.
 - Propietario y Fundador: Javier Andrés Alberdi Baptista.
 - Formación del Fundador: Licenciado en Matemática por la Universidad Mayor de San Andrés (UMSA, Título en Provisión Nacional 2019). Formación ejecutiva mediante el Middle Management Program del INCAE.
-- Experiencia: Consultor Senior Independiente desde 2009. Ex Gerente General en ESOFT SRL, ex líder estratégico en Síntesis S.A. y ENTEL S.A.
+- Experiencia: Consultor Senior Independiente desde 2009. Ex Gerente General en empresas de TI y ex líder estratégico en reconocidas instituciones.
 - Certificaciones Destacadas: AWS Certified Cloud Practitioner (2025), Introducing Generative AI with AWS (2025), AWS Educate Machine Learning Foundations (2025), Google Cloud (Seguridad, Operaciones, Modernización e IA), Scrum Master Certification (2021).
 
 2. PORTAFOLIO DE SERVICIOS (ACTIVIDADES ECONÓMICAS):
@@ -27,8 +27,8 @@ export const AAB1_KNOWLEDGE_BASE = `
   * Amazon Bedrock (GenAI): Procesa audio de voz del vendedor, extrae entidades y actualiza automáticamente Amazon DynamoDB ("CFO en tu bolsillo" / interfaz voice-first).
   * AWS Amplify, Amazon Cognito, Amazon Location Service y AWS Lambda: Arquitectura serverless de costo casi cero en reposo y escalamiento automático.
 - Enlaces oficiales de ENCUENTRAME.BO:
-  * Artículo AWS Builders: https://builder.aws.com/community/@andresalberdi
-  * Video en YouTube: https://www.youtube.com/watch?v=vK4e0Z8fh8g
+  * Artículo AWS Builders: https://builder.aws.com/content/39bBip3BFZ1dQG8FfVaVYsqO9us/aideas-encuentramebo-find-me-bolivia
+  * Canal de YouTube: https://www.youtube.com/@andresalberdib
 
 4. CANALES DE CONTACTO OFICIALES DE AAB1:
 - Correo Principal para Negocios: alberdi.andres@gmail.com
@@ -119,11 +119,11 @@ export function queryLocalAAB1RAG(rawQuery) {
   }
 
   if (query.includes('encuentrame') || query.includes('ideas') || query.includes('aws') || query.includes('rekognition') || query.includes('bedrock')) {
-    return "🚀 **ENCUENTRAME.BO (Find Me Bolivia)** es el proyecto estrella de AAB1, semifinalista del concurso **10.000 AIdeas de AWS Builders**. Conecta la economía informal callejera mediante **Amazon Rekognition** (validación de puestos por foto) y **Amazon Bedrock** (gestión de inventario por voz 'CFO en tu bolsillo'). Puedes ver la demostración en YouTube: https://www.youtube.com/watch?v=vK4e0Z8fh8g";
+    return "🚀 **ENCUENTRAME.BO (Find Me Bolivia)** es el proyecto estrella de AAB1, semifinalista del concurso **10.000 AIdeas de AWS Builders**. Conecta la economía informal callejera mediante **Amazon Rekognition** (validación de puestos por foto) y **Amazon Bedrock** (gestión de inventario por voz 'CFO en tu bolsillo'). Puedes leer el artículo completo en AWS Builders: https://builder.aws.com/content/39bBip3BFZ1dQG8FfVaVYsqO9us/aideas-encuentramebo-find-me-bolivia y ver el canal en YouTube: https://www.youtube.com/@andresalberdib";
   }
 
   if (query.includes('quien') || query.includes('andres') || query.includes('alberdi') || query.includes('fundador') || query.includes('perfil')) {
-    return "👨‍💻 **Javier Andrés Alberdi Baptista** es el fundador de AAB1. Es Licenciado en Matemática por la UMSA (2019), con formación ejecutiva en INCAE y certificaciones AWS Certified Cloud Practitioner e IA Generativa. Cuenta con más de 15 años de trayectoria como Consultor Senior e ex ejecutivo en ENTEL S.A., Síntesis S.A. y ESOFT SRL.";
+    return "👨‍💻 **Javier Andrés Alberdi Baptista** es el fundador de AAB1. Es Licenciado en Matemática por la UMSA (2019), con formación ejecutiva en INCAE y certificaciones AWS Certified Cloud Practitioner e IA Generativa. Cuenta con más de 15 años de trayectoria como Consultor Senior IT.";
   }
 
   if (query.includes('servicios') || query.includes('ofrece') || query.includes('nube') || query.includes('ia') || query.includes('blockchain')) {
@@ -131,7 +131,7 @@ export function queryLocalAAB1RAG(rawQuery) {
   }
 
   if (query.includes('contacto') || query.includes('correo') || query.includes('email') || query.includes('telefono') || query.includes('celular') || query.includes('ubica')) {
-    return "✉️ **Contacto Oficial AAB1**:\n- Correo Principal: **alberdi.andres@gmail.com**\n- Celular / WhatsApp: **(+591) 72047339**\n- Sede: La Paz, Bolivia\n- Perfil Web: https://andresalberdi.github.io/";
+    return "✉️ **Contacto Oficial AAB1**:\n- Correo Principal: **alberdi.andres@gmail.com**\n- Celular / WhatsApp: **(+591) 72047339**\n- Sede: La Paz, Bolivia\n- Perfil Web: https://andresalberdi.github.io/\n- YouTube: https://www.youtube.com/@andresalberdib";
   }
 
   return "AAB1 es una empresa unipersonal boliviana de consultoría tecnológica avanzada dirigida por Andrés Alberdi Baptista. Para consultas de proyectos escribinos a **alberdi.andres@gmail.com** o al (+591) 72047339.";
