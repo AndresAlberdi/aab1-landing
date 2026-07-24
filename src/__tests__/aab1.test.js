@@ -42,4 +42,19 @@ describe('AAB1 Unit Test Battery', () => {
     expect(response).toContain('AWS Certified Cloud Practitioner');
   });
 
+  it('Responde adecuadamente sobre los socios y desarrolladores de ENCUENTRAME.BO (Carlos Miranda y Luan Huanca)', () => {
+    const response = queryLocalAAB1RAG('¿Quiénes son los desarrolladores de encuentrame.bo?');
+    expect(response).toContain('Carlos Miranda');
+    expect(response).toContain('Luan Huanca');
+    expect(response).toContain('https://www.linkedin.com/in/cmrnda/');
+    expect(response).toContain('https://www.linkedin.com/in/luanhuanca/');
+  });
+
+  it('Responde adecuadamente sobre las alianzas y colaboraciones estratégicas (Pilares Consultores, Tercera Letra, Hipatia)', () => {
+    const response = queryLocalAAB1RAG('¿Con qué empresas o instituciones colabora AAB1?');
+    expect(response).toContain('Pilares Consultores S.R.L.');
+    expect(response).toContain('Tercera Letra');
+    expect(response).toContain('Hipatia');
+  });
+
 });

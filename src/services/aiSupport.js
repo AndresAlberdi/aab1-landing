@@ -26,13 +26,22 @@ export const AAB1_KNOWLEDGE_BASE = `
   * Amazon Rekognition: Analiza fotos de los puestos, detecta etiquetas (frutas, ropa, electrónica) y valida apertura física para evitar spam.
   * Amazon Bedrock (GenAI): Procesa audio de voz del vendedor, extrae entidades y actualiza automáticamente Amazon DynamoDB ("CFO en tu bolsillo" / interfaz voice-first).
   * AWS Amplify, Amazon Cognito, Amazon Location Service y AWS Lambda: Arquitectura serverless de costo casi cero en reposo y escalamiento automático.
+- Equipo de Socios y Desarrolladores de ENCUENTRAME.BO:
+  * Andrés Alberdi (Fundador & Líder de Arquitectura Cloud/AI): https://www.linkedin.com/in/andres-alberdi-baptista/
+  * Carlos Miranda (Socio & Desarrollador): https://www.linkedin.com/in/cmrnda/
+  * Luan Huanca (Socio & Desarrollador): https://www.linkedin.com/in/luanhuanca/
 - Enlaces oficiales de ENCUENTRAME.BO:
   * Artículo AWS Builders: https://builder.aws.com/content/39bBip3BFZ1dQG8FfVaVYsqO9us/aideas-encuentramebo-find-me-bolivia
   * Video Demostración en Español: https://youtu.be/4osZAoSnjtQ?si=CrHoEZDQ98MBsLVI
   * Video Demostración en Inglés: https://youtu.be/vK4e0Z8fh8g?si=3jfY4E3JN7SeFnWE
   * Canal Oficial YouTube: https://www.youtube.com/@andresalberdib
 
-4. CANALES DE CONTACTO OFICIALES DE AAB1:
+4. RED DE COLABORACIÓN Y ALIANZAS ESTRATÉGICAS:
+- Pilares Consultores S.R.L.: Consultoría y asesoramiento empresarial estratégico (www.pilaresconsultoressrl.com).
+- Tercera Letra: Estrategia, comunicación y soluciones digitales (https://terceraletra.cl/).
+- Hipatia: Plataforma de innovación tecnológica, análisis de datos e inclusión digital (https://hipatiabo.com/).
+
+5. CANALES DE CONTACTO OFICIALES DE AAB1:
 - Correo Principal para Negocios: alberdi.andres@gmail.com
 - Correos Directos con Andrés Alberdi: andresalberdi@gmail.com / aalberdi@gmail.com
 - Teléfono / WhatsApp: (+591) 72047339
@@ -147,14 +156,16 @@ export function queryLocalAAB1RAG(rawQuery, forcedLang = null) {
       : "Por políticas de seguridad y confidencialidad, la información sobre accesos administrativos o credenciales es confidencial. Contáctanos a **alberdi.andres@gmail.com**.";
   }
 
-  if (query.includes('encuentrame') || query.includes('ideas') || query.includes('aws') || query.includes('rekognition') || query.includes('bedrock')) {
-    const videoUrl = currentLang === 'en' 
-      ? 'https://youtu.be/vK4e0Z8fh8g?si=3jfY4E3JN7SeFnWE' 
-      : 'https://youtu.be/4osZAoSnjtQ?si=CrHoEZDQ98MBsLVI';
-
+  if (query.includes('carlos') || query.includes('luan') || query.includes('socio') || query.includes('partner') || query.includes('desarrollador') || query.includes('developer') || query.includes('equipo') || query.includes('team')) {
     return currentLang === 'en'
-      ? `🚀 **ENCUENTRAME.BO (Find Me Bolivia)** is AAB1's featured project, a semifinalist in AWS Builders **10.000 AIdeas**. It connects informal street vendors using **Amazon Rekognition** (stall photo validation) and **Amazon Bedrock** (voice inventory "CFO in your pocket"). Watch presentation video: ${videoUrl}`
-      : `🚀 **ENCUENTRAME.BO (Find Me Bolivia)** es el proyecto estrella de AAB1, semifinalista del concurso **10.000 AIdeas de AWS Builders**. Conecta la economía informal callejera mediante **Amazon Rekognition** (validación de puestos por foto) y **Amazon Bedrock** (gestión de inventario por voz 'CFO en tu bolsillo'). Ver demostración en YouTube: ${videoUrl}`;
+      ? "👥 **ENCUENTRAME.BO Team & Partners**:\n- **Andrés Alberdi** (Founder & Cloud/AI Lead Architect): https://www.linkedin.com/in/andres-alberdi-baptista/\n- **Carlos Miranda** (Partner & Developer): https://www.linkedin.com/in/cmrnda/\n- **Luan Huanca** (Partner & Developer): https://www.linkedin.com/in/luanhuanca/"
+      : "👥 **Socios y Desarrolladores de ENCUENTRAME.BO**:\n- **Andrés Alberdi** (Fundador & Líder de Arquitectura Cloud/AI): https://www.linkedin.com/in/andres-alberdi-baptista/\n- **Carlos Miranda** (Socio & Desarrollador): https://www.linkedin.com/in/cmrnda/\n- **Luan Huanca** (Socio & Desarrollador): https://www.linkedin.com/in/luanhuanca/";
+  }
+
+  if (query.includes('colabor') || query.includes('alianza') || query.includes('pilares') || query.includes('tercera') || query.includes('hipatia')) {
+    return currentLang === 'en'
+      ? "🤝 **Strategic Alliances & Collaborations**:\n- **Pilares Consultores S.R.L.**: Enterprise strategy & consulting (www.pilaresconsultoressrl.com)\n- **Tercera Letra**: Digital strategy & communication (https://terceraletra.cl/)\n- **Hipatia**: Tech innovation & data analytics (https://hipatiabo.com/)"
+      : "🤝 **Alianzas Estratégicas y Colaboraciones**:\n- **Pilares Consultores S.R.L.**: Consultoría y asesoramiento empresarial (www.pilaresconsultoressrl.com)\n- **Tercera Letra**: Estrategia y soluciones digitales (https://terceraletra.cl/)\n- **Hipatia**: Innovación tecnológica y análisis de datos (https://hipatiabo.com/)";
   }
 
   if (query.includes('quien') || query.includes('who') || query.includes('andres') || query.includes('alberdi') || query.includes('fundador') || query.includes('founder')) {
@@ -163,10 +174,14 @@ export function queryLocalAAB1RAG(rawQuery, forcedLang = null) {
       : "👨‍💻 **Javier Andrés Alberdi Baptista** es el fundador de AAB1. Es Licenciado en Matemática por la UMSA (2019), con formación ejecutiva en INCAE y certificaciones AWS Certified Cloud Practitioner e IA Generativa. Cuenta con más de 15 años de trayectoria como Consultor Senior IT.";
   }
 
-  if (query.includes('servicios') || query.includes('services') || query.includes('nube') || query.includes('cloud') || query.includes('ia') || query.includes('ai') || query.includes('blockchain')) {
+  if (query.includes('encuentrame') || query.includes('ideas') || query.includes('aws') || query.includes('rekognition') || query.includes('bedrock')) {
+    const videoUrl = currentLang === 'en' 
+      ? 'https://youtu.be/vK4e0Z8fh8g?si=3jfY4E3JN7SeFnWE' 
+      : 'https://youtu.be/4osZAoSnjtQ?si=CrHoEZDQ98MBsLVI';
+
     return currentLang === 'en'
-      ? "💼 **AAB1 Services**:\n- **Primary Activities:** IT consulting, Cloud computing (AWS/GCP), Artificial Intelligence (GenAI & RAG), and Blockchain platforms.\n- **Complementary Activities:** Web portals, data processing, custom software engineering, and wholesale software distribution."
-      : "💼 **Servicios de AAB1**:\n- **Actividades Primarias:** Consultoría informática avanzada, procesamiento en la nube (AWS/GCP), Inteligencia Artificial (IA Generativa) y plataformas Blockchain.\n- **Actividades Complementarias:** Portales web, procesamiento de datos, programación a medida y software al por mayor.";
+      ? `🚀 **ENCUENTRAME.BO (Find Me Bolivia)** is AAB1's featured project, a semifinalist in AWS Builders **10.000 AIdeas**. It connects informal street vendors using **Amazon Rekognition** (stall photo validation) and **Amazon Bedrock** (voice inventory "CFO in your pocket"). Watch presentation video: ${videoUrl}`
+      : `🚀 **ENCUENTRAME.BO (Find Me Bolivia)** es el proyecto estrella de AAB1, semifinalista del concurso **10.000 AIdeas de AWS Builders**. Conecta la economía informal callejera mediante **Amazon Rekognition** (validación de puestos por foto) y **Amazon Bedrock** (gestión de inventario por voz 'CFO en tu bolsillo'). Ver demostración en YouTube: ${videoUrl}`;
   }
 
   if (query.includes('contacto') || query.includes('contact') || query.includes('correo') || query.includes('email') || query.includes('phone') || query.includes('telefono')) {
