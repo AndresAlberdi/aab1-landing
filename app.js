@@ -1,13 +1,65 @@
 /* ======================================================
-   AAB1 - INTERACTIVIDAD FRONTEND & LÓGICA PRINCIPAL
+   AAB1 - INTERACTIVIDAD FRONTEND, I18N & LÓGICA PRINCIPAL
    ====================================================== */
 
 import { saveLead } from './src/services/leadService.js';
 import { askAAB1Assistant } from './src/services/aiSupport.js';
+import { translations } from './src/i18n/translations.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Selector de Tema Día / Noche (Dark & Light Mode)
+  // 1. Selector e Internacionalización de Idioma (ES / EN)
+  const langToggle = document.getElementById('lang-toggle');
+  const langLabel = document.getElementById('lang-label');
+  const savedLang = localStorage.getItem('aab1_lang') || 'es';
+
+  applyLanguage(savedLang);
+
+  if (langToggle) {
+    langToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const currentLang = localStorage.getItem('aab1_lang') || 'es';
+      const newLang = currentLang === 'es' ? 'en' : 'es';
+      applyLanguage(newLang);
+      localStorage.setItem('aab1_lang', newLang);
+    });
+  }
+
+  function applyLanguage(lang) {
+    const dict = translations[lang] || translations.es;
+    document.documentElement.setAttribute('lang', lang);
+
+    // Actualizar etiqueta del botón
+    if (langLabel) {
+      langLabel.textContent = lang === 'es' ? 'EN' : 'ES';
+    }
+
+    // Actualizar elementos con data-i18n
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) {
+        el.innerHTML = dict[key];
+      }
+    });
+
+    // Actualizar placeholders
+    const placeholders = document.querySelectorAll('[data-i18n-ph]');
+    placeholders.forEach(el => {
+      const key = el.getAttribute('data-i18n-ph');
+      if (dict[key]) {
+        el.setAttribute('placeholder', dict[key]);
+      }
+    });
+
+    // Actualizar dinámicamente el enlace del Video de YouTube para ENCUENTRAME.BO
+    const ytVideoLink = document.getElementById('encuentrame-yt-link');
+    if (ytVideoLink && dict.encuentrame_youtube_url) {
+      ytVideoLink.setAttribute('href', dict.encuentrame_youtube_url);
+    }
+  }
+
+  // 2. Selector de Tema Día / Noche (Dark & Light Mode)
   const themeToggle = document.getElementById('theme-toggle');
   const savedTheme = localStorage.getItem('aab1_theme') || 'dark';
 
@@ -33,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 2. Control de Menú Navegación Móvil
+  // 3. Control de Menú Navegación Móvil
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-link, .nav-menu .btn');
@@ -53,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Animaciones de Revelado Progresivo en Scroll
+  // 4. Animaciones de Revelado Progresivo en Scroll
   const animateElements = document.querySelectorAll('.animate-on-scroll');
   const scrollObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -69,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   animateElements.forEach(el => scrollObserver.observe(el));
 
-  // 4. Manejo del Formulario de Contacto (Leads -> alberdi.andres@gmail.com)
+  // 5. Manejo del Formulario de Contacto (Leads -> alberdi.andres@gmail.com)
   const contactForm = document.getElementById('aab1-contact-form');
   const formSuccessBox = document.getElementById('form-success-box');
   const resetFormBtn = document.getElementById('reset-contact-form-btn');
@@ -115,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Agente Conversacional IA (Chatbot Flotante RAG AAB1)
+  // 6. Agente Conversacional IA (Chatbot Flotante RAG AAB1)
   const aiChatToggle = document.getElementById('ai-chat-toggle');
   const aiChatWindow = document.getElementById('ai-chat-window');
   const aiChatClose = document.getElementById('ai-chat-close');

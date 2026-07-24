@@ -145,19 +145,27 @@
       </a>
       
       <div class="nav-actions">
+        <!-- BOTÓN TRADUCCIÓN IDIOMA (ES / EN) -->
+        <button id="lang-toggle" class="theme-toggle" aria-label="Cambiar idioma / Switch language" title="Cambiar Idioma ES/EN" style="font-weight: 700; font-size: 0.82rem; padding: 0 0.6rem; gap: 0.3rem;">
+          <span class="material-icons-round" style="font-size: 1.1rem;">language</span>
+          <span id="lang-label">EN</span>
+        </button>
+
+        <!-- BOTÓN MODO DÍA / NOCHE -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema día/noche" title="Cambiar Modo Día/Noche">
           <span class="material-icons-round">light_mode</span>
         </button>
+
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
           <span class="material-icons-round">menu</span>
         </button>
       </div>
 
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#sobre-mi" class="nav-link">Fundador</a></li>
-        <li><a href="#servicios" class="nav-link">Servicios</a></li>
-        <li><a href="#encuentrame" class="nav-link">ENCUENTRAME.BO</a></li>
-        <li><a href="#contacto" class="btn btn-primary">Contacto <span class="material-icons-round">arrow_forward</span></a></li>
+        <li><a href="#sobre-mi" class="nav-link" data-i18n="nav_founder">Fundador</a></li>
+        <li><a href="#servicios" class="nav-link" data-i18n="nav_services">Servicios</a></li>
+        <li><a href="#encuentrame" class="nav-link" data-i18n="nav_encuentrame">ENCUENTRAME.BO</a></li>
+        <li><a href="#contacto" class="btn btn-primary"><span data-i18n="nav_contact">Contacto</span> <span class="material-icons-round">arrow_forward</span></a></li>
       </ul>
     </div>
   </header>
@@ -169,17 +177,17 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <div class="badge animate-on-scroll">
-            <img src="assets/aab1-logo.png" class="badge-logo" alt=""> Empresa Unipersonal Boliviana
+            <img src="assets/aab1-logo.png" class="badge-logo" alt=""> <span data-i18n="hero_badge">Empresa Unipersonal Boliviana</span>
           </div>
           <h1 class="hero-title animate-on-scroll">
-            Arquitectura de <span class="gradient-text">Nube, IA & Blockchain</span>
+            <span data-i18n="hero_title_1">Arquitectura de</span> <span class="gradient-text" data-i18n="hero_title_gradient">Nube, IA & Blockchain</span>
           </h1>
-          <p class="hero-description animate-on-scroll">
+          <p class="hero-description animate-on-scroll" data-i18n="hero_description">
             Consultoría tecnológica de alto nivel para empresas y gobiernos. Diseñamos ecosistemas digitales resilientes, procesamiento en la nube e Inteligencia Artificial aplicada.
           </p>
           <div class="hero-actions animate-on-scroll">
-            <a href="#contacto" class="btn btn-primary">Iniciar Consultoría <span class="material-icons-round">arrow_forward</span></a>
-            <a href="#encuentrame" class="btn btn-secondary">Ver Proyecto Estrella <span class="material-icons-round">star</span></a>
+            <a href="#contacto" class="btn btn-primary"><span data-i18n="hero_btn_contact">Iniciar Consultoría</span> <span class="material-icons-round">arrow_forward</span></a>
+            <a href="#encuentrame" class="btn btn-secondary"><span data-i18n="hero_btn_project">Ver Proyecto Estrella</span> <span class="material-icons-round">star</span></a>
           </div>
         </div>
         <div class="hero-logo-card glass-card animate-on-scroll" style="padding: 1.25rem;">
@@ -195,18 +203,18 @@
     <section id="sobre-mi">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> Liderazgo Técnico</div>
-          <h2 class="section-title">Sobre el Fundador: <span class="gradient-text">Andrés Alberdi</span></h2>
-          <p class="section-subtitle">Licenciado en Matemática por la UMSA, consultor senior con trayectoria ejecutiva en alta gerencia y certificaciones internacionales en AWS y GCP.</p>
+          <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> <span data-i18n="founder_badge">Liderazgo Técnico</span></div>
+          <h2 class="section-title"><span data-i18n="founder_title_1">Sobre el Fundador:</span> <span class="gradient-text" data-i18n="founder_title_gradient">Andrés Alberdi</span></h2>
+          <p class="section-subtitle" data-i18n="founder_subtitle">Licenciado en Matemática por la UMSA, consultor senior con trayectoria ejecutiva en alta gerencia y certificaciones internacionales en AWS y GCP.</p>
         </div>
 
         <div class="profile-grid">
           <div class="glass-card animate-on-scroll">
-            <h3 style="color: var(--text-title); margin-bottom: 1rem; font-size: 1.3rem;">Trayectoria & Formación</h3>
-            <p style="margin-bottom: 1rem;">
+            <h3 style="color: var(--text-title); margin-bottom: 1rem; font-size: 1.3rem;" data-i18n="founder_bio_title">Trayectoria & Formación</h3>
+            <p style="margin-bottom: 1rem;" data-i18n="founder_bio_p1">
               <strong>Javier Andrés Alberdi Baptista</strong> es Licenciado en Matemática por la Universidad Mayor de San Andrés (UMSA, Título en Provisión Nacional 2019) y cuenta con formación ejecutiva en el <em>Middle Management Program</em> del <strong>INCAE Business School</strong>.
             </p>
-            <p style="margin-bottom: 1rem;">
+            <p style="margin-bottom: 1rem;" data-i18n="founder_bio_p2">
               Desde 2009 se desempeña como Consultor Senior Independiente en Bolivia y Sudamérica. Ha ejercido roles directivos como <strong>Gerente General</strong> y diversas gerencias estratégicas en reconocidas empresas bolivianas.
             </p>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem;">
@@ -217,8 +225,8 @@
           </div>
 
           <div class="glass-card animate-on-scroll">
-            <h3 style="color: var(--text-title); margin-bottom: 1rem; font-size: 1.3rem;">Enlaces Oficiales & Redes</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+            <h3 style="color: var(--text-title); margin-bottom: 1rem; font-size: 1.3rem;" data-i18n="links_title">Enlaces Oficiales & Redes</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;" data-i18n="links_subtitle">
               Explora las publicaciones académicas, perfil profesional y contenidos de divulgación de Andrés Alberdi:
             </p>
 
@@ -226,40 +234,40 @@
               <a href="https://andresalberdi.github.io/" target="_blank" rel="noopener noreferrer" class="link-card">
                 <div class="link-icon"><span class="material-icons-round">language</span></div>
                 <div>
-                  <h4 style="font-size: 0.9rem;">Perfil General</h4>
-                  <p style="font-size: 0.75rem; color: var(--text-muted);">andresalberdi.github.io</p>
+                  <h4 style="font-size: 0.9rem;" data-i18n="link_general_title">Perfil General</h4>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="link_general_sub">andresalberdi.github.io</p>
                 </div>
               </a>
 
               <a href="https://www.linkedin.com/in/andres-alberdi-baptista/" target="_blank" rel="noopener noreferrer" class="link-card">
                 <div class="link-icon"><span class="material-icons-round">work</span></div>
                 <div>
-                  <h4 style="font-size: 0.9rem;">LinkedIn</h4>
-                  <p style="font-size: 0.75rem; color: var(--text-muted);">/in/andres-alberdi-baptista</p>
+                  <h4 style="font-size: 0.9rem;" data-i18n="link_linkedin_title">LinkedIn</h4>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="link_linkedin_sub">/in/andres-alberdi-baptista</p>
                 </div>
               </a>
 
               <a href="https://dimensionesenz.blogspot.com/" target="_blank" rel="noopener noreferrer" class="link-card">
                 <div class="link-icon"><span class="material-icons-round">article</span></div>
                 <div>
-                  <h4 style="font-size: 0.9rem;">Blog de Investigación</h4>
-                  <p style="font-size: 0.75rem; color: var(--text-muted);">Dimensiones en Z</p>
+                  <h4 style="font-size: 0.9rem;" data-i18n="link_blog_title">Blog de Investigación</h4>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="link_blog_sub">Dimensiones en Z</p>
                 </div>
               </a>
 
               <a href="https://umsa-bo.academia.edu/Andr%C3%A9sAlberdi" target="_blank" rel="noopener noreferrer" class="link-card">
                 <div class="link-icon"><span class="material-icons-round">school</span></div>
                 <div>
-                  <h4 style="font-size: 0.9rem;">Academia.edu</h4>
-                  <p style="font-size: 0.75rem; color: var(--text-muted);">Publicaciones UMSA</p>
+                  <h4 style="font-size: 0.9rem;" data-i18n="link_academia_title">Academia.edu</h4>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="link_academia_sub">Publicaciones UMSA</p>
                 </div>
               </a>
 
               <a href="https://www.youtube.com/@andresalberdib" target="_blank" rel="noopener noreferrer" class="link-card">
                 <div class="link-icon"><span class="material-icons-round">play_circle</span></div>
                 <div>
-                  <h4 style="font-size: 0.9rem;">YouTube</h4>
-                  <p style="font-size: 0.75rem; color: var(--text-muted);">@andresalberdib</p>
+                  <h4 style="font-size: 0.9rem;" data-i18n="link_youtube_title">YouTube</h4>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="link_youtube_sub">@andresalberdib</p>
                 </div>
               </a>
             </div>
@@ -272,62 +280,62 @@
     <section id="servicios">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> Áreas de Especialidad</div>
-          <h2 class="section-title">Portafolio de <span class="gradient-text">Servicios Estratégicos</span></h2>
-          <p class="section-subtitle">Actividades económicas registradas orientadas a la transformación digital y consultoría informática de alta complejidad.</p>
+          <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> <span data-i18n="services_badge">Áreas de Especialidad</span></div>
+          <h2 class="section-title"><span data-i18n="services_title_1">Portafolio de</span> <span class="gradient-text" data-i18n="services_title_gradient">Servicios Estratégicos</span></h2>
+          <p class="section-subtitle" data-i18n="services_subtitle">Actividades económicas registradas orientadas a la transformación digital y consultoría informática de alta complejidad.</p>
         </div>
 
-        <h3 style="color: var(--accent-light); margin-bottom: 1.5rem;" class="animate-on-scroll">Actividades Primarias</h3>
+        <h3 style="color: var(--accent-light); margin-bottom: 1.5rem;" class="animate-on-scroll" data-i18n="services_primary_cat">Actividades Primarias</h3>
         <div class="services-grid" style="margin-bottom: 3rem;">
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">laptop_mac</span></div>
-            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);">Consultoría de Informática</h4>
-            <p style="font-size: 0.9rem; color: var(--text-muted);">Asesoría senior independiente en arquitectura de sistemas, diseño de ecosistemas tecnológicos y optimización de modelos de negocio.</p>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_consulting_title">Consultoría de Informática</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="service_consulting_desc">Asesoría senior independiente en arquitectura de sistemas, diseño de ecosistemas tecnológicos y optimización de modelos de negocio.</p>
           </div>
 
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">cloud_queue</span></div>
-            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);">Procesamiento en la Nube</h4>
-            <p style="font-size: 0.9rem; color: var(--text-muted);">Diseño y ejecución de servicios tecnológicos de gestión y cómputo serverless en la nube (AWS & Google Cloud Platform).</p>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_cloud_title">Procesamiento en la Nube</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="service_cloud_desc">Diseño y ejecución de servicios tecnológicos de gestión y cómputo serverless en la nube (AWS & Google Cloud Platform).</p>
           </div>
 
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">psychology</span></div>
-            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);">Inteligencia Artificial</h4>
-            <p style="font-size: 0.9rem; color: var(--text-muted);">Desarrollo de modelos predictivos, agentes conversacionales RAG, visión artificial y automatización avanzada con IA Generativa.</p>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_ai_title">Inteligencia Artificial</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="service_ai_desc">Desarrollo de modelos predictivos, agentes conversacionales RAG, visión artificial y automatización avanzada con IA Generativa.</p>
           </div>
 
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">hub</span></div>
-            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);">Plataformas Blockchain</h4>
-            <p style="font-size: 0.9rem; color: var(--text-muted);">Implementación de registros inmutables, trazabilidad de datos, gobernanza descentralizada y contratos inteligentes.</p>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_blockchain_title">Plataformas Blockchain</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="service_blockchain_desc">Implementación de registros inmutables, trazabilidad de datos, gobernanza descentralizada y contratos inteligentes.</p>
           </div>
         </div>
 
-        <h3 style="color: var(--accent-light); margin-bottom: 1.5rem;" class="animate-on-scroll">Actividades Complementarias</h3>
+        <h3 style="color: var(--accent-light); margin-bottom: 1.5rem;" class="animate-on-scroll" data-i18n="services_sec_cat">Actividades Complementarias</h3>
         <div class="services-grid">
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">web</span></div>
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);">Portales Web & Hosting</h4>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Desarrollo de plataformas web de alto rendimiento, hospedaje seguro y soluciones para el comercio digital.</p>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_web_title">Portales Web & Hosting</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="service_web_desc">Desarrollo de plataformas web de alto rendimiento, hospedaje seguro y soluciones para el comercio digital.</p>
           </div>
 
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">storage</span></div>
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);">Procesamiento de Datos</h4>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Estructuración, limpieza, procesamiento analítico y migración masiva de bases de datos de misión crítica.</p>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_data_title">Procesamiento de Datos</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="service_data_desc">Estructuración, limpieza, procesamiento analítico y migración masiva de bases de datos de misión crítica.</p>
           </div>
 
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">code</span></div>
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);">Programación Informática</h4>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Desarrollo de software a medida, integración de APIs RESTful y optimización de código fuente.</p>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_prog_title">Programación Informática</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="service_prog_desc">Desarrollo de software a medida, integración de APIs RESTful y optimización de código fuente.</p>
           </div>
 
           <div class="glass-card animate-on-scroll">
             <div class="service-icon-wrapper"><span class="material-icons-round">inventory_2</span></div>
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);">Software al por Mayor</h4>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Provisión y comercialización autorizada de programas informáticos y licencias especializadas.</p>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="service_software_title">Software al por Mayor</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="service_software_desc">Provisión y comercialización autorizada de programas informáticos y licencias especializadas.</p>
           </div>
         </div>
       </div>
@@ -339,51 +347,53 @@
         <div class="glass-card encuentrame-box animate-on-scroll">
           <div class="encuentrame-header">
             <div>
-              <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> Caso de Éxito en AWS</div>
-              <h2 class="section-title" style="margin-bottom: 0.5rem;">Proyecto Estrella: <span class="gradient-text">ENCUENTRAME.BO</span></h2>
-              <p style="color: var(--text-muted); font-size: 1.05rem;">
+              <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> <span data-i18n="encuentrame_badge">Caso de Éxito en AWS</span></div>
+              <h2 class="section-title" style="margin-bottom: 0.5rem;"><span data-i18n="encuentrame_title_1">Proyecto Estrella:</span> <span class="gradient-text" data-i18n="encuentrame_title_gradient">ENCUENTRAME.BO</span></h2>
+              <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="encuentrame_subtitle">
                 (Find Me Bolivia) — Puente de proximidad inteligente e inclusión digital para la economía de base en Latinoamérica.
               </p>
             </div>
-            <span class="aws-badge">🏆 Semifinalist AWS 10.000 AIdeas</span>
+            <span class="aws-badge" data-i18n="encuentrame_aws_badge">🏆 Semifinalist AWS 10.000 AIdeas</span>
           </div>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
             <div>
-              <h4 style="color: var(--text-title); margin-bottom: 0.5rem;">El Desafío: La "Economía Invisible"</h4>
-              <p style="font-size: 0.92rem; margin-bottom: 1rem; color: var(--text-muted);">
+              <h4 style="color: var(--text-title); margin-bottom: 0.5rem;" data-i18n="encuentrame_challenge_title">El Desafío: La "Economía Invisible"</h4>
+              <p style="font-size: 0.92rem; margin-bottom: 1rem; color: var(--text-muted);" data-i18n="encuentrame_challenge_desc">
                 En Bolivia, más del 80% de la economía es informal. Miles de puestos de mercado y ferias ambulantes son "fantasmas digitales" que cambian de ubicación diariamente sin figurar en Google Maps, obligando al comprador a buscar a ciegas y privando al vendedor de un historial contable para acceder a microcréditos bancarios.
               </p>
 
-              <h4 style="color: var(--text-title); margin-bottom: 0.5rem;">La Solución: Smart Check-in con IA</h4>
-              <p style="font-size: 0.92rem; color: var(--text-muted);">
+              <h4 style="color: var(--text-title); margin-bottom: 0.5rem;" data-i18n="encuentrame_solution_title">La Solución: Smart Check-in con IA</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted);" data-i18n="encuentrame_solution_desc">
                 <strong>encuentrame.bo</strong> permite al vendedor abrir su puesto tomando una simple fotografía con su celular (validada con <strong>Amazon Rekognition</strong>) e ingresar su inventario hablando por voz (procesado por <strong>Amazon Bedrock</strong> como un "CFO en el bolsillo").
               </p>
             </div>
 
             <div>
-              <h4 style="color: var(--text-title); margin-bottom: 0.75rem;">Arquitectura AWS Serverless-First</h4>
+              <h4 style="color: var(--text-title); margin-bottom: 0.75rem;" data-i18n="encuentrame_arch_title">Arquitectura AWS Serverless-First</h4>
               <div class="encuentrame-features">
                 <div class="encuentrame-feat-card">
                   <h5 style="color: var(--accent-light); font-size: 0.9rem;">Amazon Rekognition</h5>
-                  <p style="font-size: 0.8rem; color: var(--text-muted);">Validación por visión artificial de fotos del puesto para comprobar apertura y categorizar productos.</p>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="encuentrame_rekognition_desc">Validación por visión artificial de fotos del puesto para comprobar apertura y categorizar productos.</p>
                 </div>
                 <div class="encuentrame-feat-card">
                   <h5 style="color: var(--accent-light); font-size: 0.9rem;">Amazon Bedrock (GenAI)</h5>
-                  <p style="font-size: 0.8rem; color: var(--text-muted);">Interfaz voice-first que convierte audios hablados en inventario estructurado en DynamoDB.</p>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="encuentrame_bedrock_desc">Interfaz voice-first que convierte audios hablados en inventario estructurado en DynamoDB.</p>
                 </div>
                 <div class="encuentrame-feat-card">
                   <h5 style="color: var(--accent-light); font-size: 0.9rem;">AWS Lambda & Amplify</h5>
-                  <p style="font-size: 0.8rem; color: var(--text-muted);">Infraestructura 100% serverless de costo cero en reposo y alto escalamiento.</p>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="encuentrame_lambda_desc">Infraestructura 100% serverless de costo cero en reposo y alto escalamiento.</p>
                 </div>
               </div>
 
               <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
                 <a href="https://builder.aws.com/content/39bBip3BFZ1dQG8FfVaVYsqO9us/aideas-encuentramebo-find-me-bolivia" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.6rem 1rem;">
-                  Leer en AWS Builders <span class="material-icons-round">open_in_new</span>
+                  <span data-i18n="btn_aws_builder">Leer en AWS Builders</span> <span class="material-icons-round">open_in_new</span>
                 </a>
-                <a href="https://www.youtube.com/@andresalberdib" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.6rem 1rem;">
-                  Ver Video Presentación <span class="material-icons-round">play_arrow</span>
+                
+                <!-- BOTÓN VIDEO YOUTUBE ENCUENTRAME.BO CON LINK DINÁMICO ES / EN -->
+                <a id="encuentrame-yt-link" href="https://youtu.be/4osZAoSnjtQ?si=CrHoEZDQ98MBsLVI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.6rem 1rem;">
+                  <span data-i18n="btn_youtube_video">Ver Video Presentación</span> <span class="material-icons-round">play_arrow</span>
                 </a>
               </div>
             </div>
@@ -396,9 +406,9 @@
     <section id="contacto">
       <div class="container contact-grid">
         <div class="contact-info animate-on-scroll">
-          <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> Comunicación Directa</div>
-          <h2 class="section-title">Inicia tu Proyecto con <span class="gradient-text">AAB1</span></h2>
-          <p class="hero-description">
+          <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> <span data-i18n="contact_badge">Comunicación Directa</span></div>
+          <h2 class="section-title"><span data-i18n="contact_title_1">Inicia tu Proyecto con</span> <span class="gradient-text" data-i18n="contact_title_gradient">AAB1</span></h2>
+          <p class="hero-description" data-i18n="contact_subtitle">
             Escríbenos para agendar una sesión de consultoría técnica o cotizar servicios de arquitectura en la nube, desarrollo de software e Inteligencia Artificial.
           </p>
 
@@ -406,7 +416,7 @@
             <div style="display: flex; gap: 1rem; align-items: center;">
               <div class="link-icon"><span class="material-icons-round">email</span></div>
               <div>
-                <h4 style="font-size: 0.95rem;">Correo Principal</h4>
+                <h4 style="font-size: 0.95rem;" data-i18n="contact_email_title">Correo Principal</h4>
                 <p style="color: var(--accent-light); font-weight: 600;">alberdi.andres@gmail.com</p>
               </div>
             </div>
@@ -414,7 +424,7 @@
             <div style="display: flex; gap: 1rem; align-items: center;">
               <div class="link-icon"><span class="material-icons-round">phone</span></div>
               <div>
-                <h4 style="font-size: 0.95rem;">Celular / WhatsApp</h4>
+                <h4 style="font-size: 0.95rem;" data-i18n="contact_phone_title">Celular / WhatsApp</h4>
                 <p style="color: var(--text-title); font-weight: 500;">(+591) 72047339</p>
               </div>
             </div>
@@ -422,8 +432,8 @@
             <div style="display: flex; gap: 1rem; align-items: center;">
               <div class="link-icon"><span class="material-icons-round">place</span></div>
               <div>
-                <h4 style="font-size: 0.95rem;">Sede de Operaciones</h4>
-                <p style="color: var(--text-title); font-weight: 500;">La Paz, Bolivia</p>
+                <h4 style="font-size: 0.95rem;" data-i18n="contact_location_title">Sede de Operaciones</h4>
+                <p style="color: var(--text-title); font-weight: 500;" data-i18n="contact_location_val">La Paz, Bolivia</p>
               </div>
             </div>
           </div>
@@ -432,47 +442,47 @@
         <div class="glass-card animate-on-scroll">
           <form id="aab1-contact-form">
             <div class="form-group">
-              <label class="form-label" for="name">Nombre Completo</label>
-              <input type="text" id="name" class="form-control" placeholder="Ej. Carlos Mendoza" required>
+              <label class="form-label" for="name" data-i18n="form_name_label">Nombre Completo</label>
+              <input type="text" id="name" class="form-control" placeholder="Ej. Carlos Mendoza" data-i18n-ph="form_name_ph" required>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
               <div class="form-group">
-                <label class="form-label" for="email">Correo Electrónico</label>
-                <input type="email" id="email" class="form-control" placeholder="carlos@empresa.com" required>
+                <label class="form-label" for="email" data-i18n="form_email_label">Correo Electrónico</label>
+                <input type="email" id="email" class="form-control" placeholder="carlos@empresa.com" data-i18n-ph="form_email_ph" required>
               </div>
               <div class="form-group">
-                <label class="form-label" for="phone">Teléfono / WhatsApp</label>
-                <input type="text" id="phone" class="form-control" placeholder="+591 70000000">
+                <label class="form-label" for="phone" data-i18n="form_phone_label">Teléfono / WhatsApp</label>
+                <input type="text" id="phone" class="form-control" placeholder="+591 70000000" data-i18n-ph="form_phone_ph">
               </div>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
               <div class="form-group">
-                <label class="form-label" for="company">Empresa / Institución</label>
-                <input type="text" id="company" class="form-control" placeholder="Ej. Esoft SRL">
+                <label class="form-label" for="company" data-i18n="form_company_label">Empresa / Institución</label>
+                <input type="text" id="company" class="form-control" placeholder="Ej. Empresa S.A." data-i18n-ph="form_company_ph">
               </div>
               <div class="form-group">
-                <label class="form-label" for="service">Servicio Requerido</label>
+                <label class="form-label" for="service" data-i18n="form_service_label">Servicio Requerido</label>
                 <select id="service" class="form-control" required>
-                  <option value="" disabled selected>Selecciona un servicio</option>
-                  <option value="consultoria">Consultoría de Informática</option>
-                  <option value="nube">Gestión y Cómputo en la Nube (AWS/GCP)</option>
-                  <option value="ia">Inteligencia Artificial & RAG</option>
-                  <option value="blockchain">Plataformas Blockchain</option>
-                  <option value="web">Desarrollo Web & Portales</option>
-                  <option value="otro">Otro Requerimiento</option>
+                  <option value="" disabled selected data-i18n="form_service_select">Selecciona un servicio</option>
+                  <option value="consultoria" data-i18n="form_service_opt_consulting">Consultoría de Informática</option>
+                  <option value="nube" data-i18n="form_service_opt_cloud">Gestión y Cómputo en la Nube (AWS/GCP)</option>
+                  <option value="ia" data-i18n="form_service_opt_ai">Inteligencia Artificial & RAG</option>
+                  <option value="blockchain" data-i18n="form_service_opt_blockchain">Plataformas Blockchain</option>
+                  <option value="web" data-i18n="form_service_opt_web">Desarrollo Web & Portales</option>
+                  <option value="otro" data-i18n="form_service_opt_other">Otro Requerimiento</option>
                 </select>
               </div>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="message">Detalle de la Consulta</label>
-              <textarea id="message" class="form-control" placeholder="Describa brevemente el alcance de su proyecto..." required></textarea>
+              <label class="form-label" for="message" data-i18n="form_msg_label">Detalle de la Consulta</label>
+              <textarea id="message" class="form-control" placeholder="Describa brevemente el alcance de su proyecto..." data-i18n-ph="form_msg_ph" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
-              Enviar Mensaje a AAB1 <span class="material-icons-round">send</span>
+              <span data-i18n="form_btn_submit">Enviar Mensaje a AAB1</span> <span class="material-icons-round">send</span>
             </button>
           </form>
 
@@ -480,11 +490,11 @@
             <div style="width: 60px; height: 60px; border-radius: 50%; background: #10b981; color: #fff; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
               <span class="material-icons-round" style="font-size: 2rem;">done</span>
             </div>
-            <h3 style="color: var(--text-title); margin-bottom: 0.5rem;">¡Mensaje Enviado con Éxito!</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            <h3 style="color: var(--text-title); margin-bottom: 0.5rem;" data-i18n="form_success_title">¡Mensaje Enviado con Éxito!</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;" data-i18n="form_success_desc">
               Gracias por escribir a AAB1. Nos pondremos en contacto contigo a la brevedad a través de <strong>alberdi.andres@gmail.com</strong>.
             </p>
-            <button class="btn btn-secondary" id="reset-contact-form-btn">Enviar otro requerimiento</button>
+            <button class="btn btn-secondary" id="reset-contact-form-btn" data-i18n="form_btn_reset">Enviar otro requerimiento</button>
           </div>
         </div>
       </div>
@@ -498,9 +508,9 @@
       <div style="display: flex; align-items: center; gap: 0.75rem;">
         <img src="assets/aab1-logo.png" alt="AAB1 Logo" style="height: 32px;">
         <span style="font-weight: 800; color: var(--text-title);">AAB1</span>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">— Consultoría Tecnológica Avanzada</span>
+        <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="footer_desc">— Consultoría Tecnológica Avanzada</span>
       </div>
-      <p style="font-size: 0.85rem; color: var(--text-muted);">
+      <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="footer_rights">
         &copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). Todos los derechos reservados.
       </p>
     </div>
@@ -527,13 +537,13 @@
     </div>
 
     <div id="ai-chat-body" class="ai-chat-body">
-      <div class="ai-msg ai-msg-bot">
+      <div class="ai-msg ai-msg-bot" data-i18n="ai_bot_greeting">
         ¡Hola! 👋 Soy el Asistente Virtual de <strong>AAB1</strong>. ¿En qué puedo ayudarte sobre nuestros servicios de consultoría tecnológica, procesamiento en la nube o sobre nuestro proyecto estrella <strong>ENCUENTRAME.BO</strong>?
       </div>
     </div>
 
     <form id="ai-chat-form" class="ai-chat-footer">
-      <input type="text" id="ai-chat-input" class="form-control" style="font-size: 0.85rem; padding: 0.6rem 0.85rem;" placeholder="Escribe tu consulta..." autocomplete="off" required>
+      <input type="text" id="ai-chat-input" class="form-control" style="font-size: 0.85rem; padding: 0.6rem 0.85rem;" placeholder="Escribe tu consulta..." data-i18n-ph="ai_bot_placeholder" autocomplete="off" required>
       <button type="submit" class="btn btn-primary" style="padding: 0.6rem 0.85rem;">
         <span class="material-icons-round">send</span>
       </button>
