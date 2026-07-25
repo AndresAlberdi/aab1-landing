@@ -39,7 +39,8 @@ describe('AAB1 Unit Test Battery', () => {
     const response = queryLocalAAB1RAG('¿quién es Andrés Alberdi?');
     expect(response).toContain('Javier Andrés Alberdi Baptista');
     expect(response).toContain('UMSA');
-    expect(response).toContain('AWS Certified Cloud Practitioner');
+    expect(response).toContain('AWS Re/Start Graduate');
+    expect(response).toContain('Google Cloud Platform');
   });
 
   it('Responde adecuadamente sobre los socios y desarrolladores de ENCUENTRAME.BO (Carlos Miranda y Luan Huanca)', () => {
