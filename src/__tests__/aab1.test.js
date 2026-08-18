@@ -35,9 +35,9 @@ describe('AAB1 Unit Test Battery', () => {
     expect(responseEn).toContain('https://youtu.be/vK4e0Z8fh8g?si=3jfY4E3JN7SeFnWE');
   });
 
-  it('Responde adecuadamente sobre el perfil del fundador Andrés Alberdi', () => {
-    const response = queryLocalAAB1RAG('¿quién es Andrés Alberdi?');
-    expect(response).toContain('Javier Andrés Alberdi Baptista');
+  it('Responde adecuadamente sobre el perfil del fundador Javier Andres Alberdi Baptista', () => {
+    const response = queryLocalAAB1RAG('¿quién es Javier Andres Alberdi Baptista?');
+    expect(response).toContain('Javier Andres Alberdi Baptista');
     expect(response).toContain('UMSA');
     expect(response).toContain('AWS Re/Start Graduate');
     expect(response).toContain('Google Cloud Platform');

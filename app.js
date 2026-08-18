@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   animateElements.forEach(el => scrollObserver.observe(el));
 
-  // 5. Manejo del Formulario de Contacto (Leads -> alberdi.andres@gmail.com)
+  // 5. Manejo del Formulario de Contacto (Leads -> alberdi.andres@gmail.com o aalberdi@gmail.com)
   const contactForm = document.getElementById('aab1-contact-form');
   const formSuccessBox = document.getElementById('form-success-box');
   const resetFormBtn = document.getElementById('reset-contact-form-btn');
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const originalText = submitBtn.innerHTML;
 
       submitBtn.disabled = true;
-      submitBtn.innerHTML = `Enviando a alberdi.andres@gmail.com... <span class="material-icons-round" style="animation: float 1s infinite;">hourglass_empty</span>`;
+      submitBtn.innerHTML = `Enviando a alberdi.andres@gmail.com o aalberdi@gmail.com... <span class="material-icons-round" style="animation: float 1s infinite;">hourglass_empty</span>`;
 
       const leadData = {
         name: document.getElementById('name')?.value || '',
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         console.error("Error en Chat IA:", err);
         loadingEl.remove();
-        appendChatMessage('bot', 'No pude procesar la consulta en este momento. Puedes escribir directamente a Andrés Alberdi a **alberdi.andres@gmail.com**.');
+        appendChatMessage('bot', 'No pude procesar la consulta en este momento. Puedes escribir directamente a Javier Andres Alberdi Baptista a **alberdi.andres@gmail.com o aalberdi@gmail.com**.');
       }
     });
   }

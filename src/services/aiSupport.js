@@ -7,7 +7,7 @@ export const AAB1_KNOWLEDGE_BASE = `
 
 1. IDENTIDAD CORPORATIVA & FUNDADOR:
 - AAB1 es una empresa unipersonal boliviana debidamente registrada en Impuestos Nacionales y SEPREC.
-- Propietario y Fundador: Javier Andrés Alberdi Baptista.
+- Propietario y Fundador: Javier Andres Alberdi Baptista.
 - Formación del Fundador: Licenciado en Matemática por la Universidad Mayor de San Andrés (UMSA, Título en Provisión Nacional). Formación ejecutiva mediante el Middle Management Program del INCAE Business School y más de 50 certificaciones ejecutivas, tecnológicas y de gestión.
 - Experiencia: Consultor Senior Independiente desde 2009. Ex Gerente General en empresas de TI y ex líder estratégico en reconocidas empresas tecnológicas bolivianas. Conferencista en Congresos Bolivianos de Matemática (SOBOLMAT) por más de 15 años.
 - Certificaciones Destacadas: AWS Re/Start Graduate, Google Cloud Platform, AWS Generative AI, Scrum Master Certified.
@@ -27,7 +27,7 @@ export const AAB1_KNOWLEDGE_BASE = `
   * Amazon Bedrock (GenAI): Procesa audio de voz del vendedor, extrae entidades y actualiza automáticamente Amazon DynamoDB ("CFO en tu bolsillo" / interfaz voice-first).
   * AWS Amplify, Amazon Cognito, Amazon Location Service y AWS Lambda: Arquitectura serverless de costo casi cero en reposo y escalamiento automático.
 - Equipo de Socios y Desarrolladores de ENCUENTRAME.BO:
-  * Andrés Alberdi (Fundador & Líder de Arquitectura Cloud/AI): https://www.linkedin.com/in/andres-alberdi-baptista/
+  * Javier Andres Alberdi Baptista (Fundador & Líder de Arquitectura Cloud/AI): https://www.linkedin.com/in/andres-alberdi-baptista/
   * Carlos Miranda (Socio & Desarrollador): https://www.linkedin.com/in/cmrnda/
   * Luan Huanca (Socio & Desarrollador): https://www.linkedin.com/in/luanhuanca/
 - Enlaces oficiales de ENCUENTRAME.BO:
@@ -43,7 +43,7 @@ export const AAB1_KNOWLEDGE_BASE = `
 
 5. CANALES DE CONTACTO OFICIALES DE AAB1:
 - Correo Principal para Negocios: alberdi.andres@gmail.com
-- Correos Directos con Andrés Alberdi: andresalberdi@gmail.com / aalberdi@gmail.com
+- Correos Directos con Javier Andres Alberdi Baptista: aalberdi@gmail.com / alberdi.andres@gmail.com
 - Teléfono / WhatsApp: (+591) 72047339
 - Sede de Operaciones: La Paz, Bolivia.
 - Sitio Web Oficial: https://andresalberdi.github.io/
@@ -53,7 +53,7 @@ export const AAB1_KNOWLEDGE_BASE = `
 `;
 
 const SECURITY_SYSTEM_PROMPT = `
-Eres el Asistente Virtual Oficial de AAB1 y representante de su fundador, Javier Andrés Alberdi Baptista.
+Eres el Asistente Virtual Oficial de AAB1 y representante de su fundador, Javier Andres Alberdi Baptista.
 
 REGLA CLAVE DE IDIOMA:
 Debes DETECTAR AUTOMÁTICAMENTE el idioma en el que el usuario te escribe (por ejemplo, español, inglés, portugués, francés, alemán, etc.) y responder SIEMPRE en ese mismo idioma de manera fluida, clara y profesional.
@@ -158,8 +158,8 @@ export function queryLocalAAB1RAG(rawQuery, forcedLang = null) {
 
   if (query.includes('carlos') || query.includes('luan') || query.includes('socio') || query.includes('partner') || query.includes('desarrollador') || query.includes('developer') || query.includes('equipo') || query.includes('team')) {
     return currentLang === 'en'
-      ? "👥 **ENCUENTRAME.BO Team & Partners**:\n- **Andrés Alberdi** (Founder & Cloud/AI Lead Architect): https://www.linkedin.com/in/andres-alberdi-baptista/\n- **Carlos Miranda** (Partner & Developer): https://www.linkedin.com/in/cmrnda/\n- **Luan Huanca** (Partner & Developer): https://www.linkedin.com/in/luanhuanca/"
-      : "👥 **Socios y Desarrolladores de ENCUENTRAME.BO**:\n- **Andrés Alberdi** (Fundador & Líder de Arquitectura Cloud/AI): https://www.linkedin.com/in/andres-alberdi-baptista/\n- **Carlos Miranda** (Socio & Desarrollador): https://www.linkedin.com/in/cmrnda/\n- **Luan Huanca** (Socio & Desarrollador): https://www.linkedin.com/in/luanhuanca/";
+      ? "👥 **ENCUENTRAME.BO Team & Partners**:\n- **Javier Andres Alberdi Baptista** (Founder & Cloud/AI Lead Architect): https://www.linkedin.com/in/andres-alberdi-baptista/\n- **Carlos Miranda** (Partner & Developer): https://www.linkedin.com/in/cmrnda/\n- **Luan Huanca** (Partner & Developer): https://www.linkedin.com/in/luanhuanca/"
+      : "👥 **Socios y Desarrolladores de ENCUENTRAME.BO**:\n- **Javier Andres Alberdi Baptista** (Fundador & Líder de Arquitectura Cloud/AI): https://www.linkedin.com/in/andres-alberdi-baptista/\n- **Carlos Miranda** (Socio & Desarrollador): https://www.linkedin.com/in/cmrnda/\n- **Luan Huanca** (Socio & Desarrollador): https://www.linkedin.com/in/luanhuanca/";
   }
 
   if (query.includes('colabor') || query.includes('alianza') || query.includes('pilares') || query.includes('tercera') || query.includes('hipatia')) {
@@ -170,8 +170,8 @@ export function queryLocalAAB1RAG(rawQuery, forcedLang = null) {
 
   if (query.includes('quien') || query.includes('who') || query.includes('andres') || query.includes('alberdi') || query.includes('fundador') || query.includes('founder')) {
     return currentLang === 'en'
-      ? "👨‍💻 **Javier Andrés Alberdi Baptista** is the founder of AAB1. He holds a B.S. in Mathematics from UMSA (National Diploma), executive training from INCAE, over 50 certifications, and AWS Re/Start Graduate & Google Cloud Platform badges. Keynote speaker at SOBOLMAT for 15+ years."
-      : "👨‍💻 **Javier Andrés Alberdi Baptista** es el fundador de AAB1. Es Licenciado en Matemática por la UMSA (Título en Provisión Nacional), con formación ejecutiva en INCAE, más de 50 certificaciones y reconocimientos como AWS Re/Start Graduate y Google Cloud Platform. Conferencista en SOBOLMAT por más de 15 años.";
+      ? "👨‍💻 **Javier Andres Alberdi Baptista** is the founder of AAB1. He holds a B.S. in Mathematics from UMSA (National Diploma), executive training from INCAE, over 50 certifications, and AWS Re/Start Graduate & Google Cloud Platform badges. Keynote speaker at SOBOLMAT for 15+ years."
+      : "👨‍💻 **Javier Andres Alberdi Baptista** es el fundador de AAB1. Es Licenciado en Matemática por la UMSA (Título en Provisión Nacional), con formación ejecutiva en INCAE, más de 50 certificaciones y reconocimientos como AWS Re/Start Graduate y Google Cloud Platform. Conferencista en SOBOLMAT por más de 15 años.";
   }
 
   if (query.includes('encuentrame') || query.includes('ideas') || query.includes('aws') || query.includes('rekognition') || query.includes('bedrock')) {
@@ -191,6 +191,6 @@ export function queryLocalAAB1RAG(rawQuery, forcedLang = null) {
   }
 
   return currentLang === 'en'
-    ? "AAB1 is a Bolivian technology consulting firm led by Andrés Alberdi Baptista. For inquiries, email **alberdi.andres@gmail.com** or call (+591) 72047339."
-    : "AAB1 es una empresa unipersonal boliviana de consultoría tecnológica avanzada dirigida por Andrés Alberdi Baptista. Para consultas de proyectos escribinos a **alberdi.andres@gmail.com** o al (+591) 72047339.";
+    ? "AAB1 is a Bolivian technology consulting firm led by Javier Andres Alberdi Baptista. For inquiries, email **alberdi.andres@gmail.com** or call (+591) 72047339."
+    : "AAB1 es una empresa unipersonal boliviana de consultoría tecnológica avanzada dirigida por Javier Andres Alberdi Baptista. Para consultas de proyectos escribinos a **alberdi.andres@gmail.com** o al (+591) 72047339.";
 }
