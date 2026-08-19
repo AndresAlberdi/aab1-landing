@@ -2,6 +2,15 @@
 <html lang="es">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5F1DXQXWM7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5F1DXQXWM7');
+  </script>
   <meta name="facebook-domain-verification" content="bm78scapyev4rbodoa2vqfb7aiie5p" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +84,7 @@
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "alberdi.andres@gmail.com",
+          "email": "andres.alberdi@aab1.website",
           "telephone": "+591-72047339",
           "contactType": "customer service",
           "availableLanguage": ["Spanish", "English"]
@@ -187,10 +196,7 @@
     <section id="hero" class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="badge animate-on-scroll">
-            <img src="assets/aab1-logo.png" class="badge-logo" alt=""> <span data-i18n="hero_badge">Empresa Unipersonal
-              Boliviana</span>
-          </div>
+
           <h1 class="hero-title animate-on-scroll">
             <span data-i18n="hero_title_1">Arquitectura de</span> <span class="gradient-text"
               data-i18n="hero_title_gradient">Nube, IA & Blockchain</span>
@@ -605,7 +611,7 @@
       </div>
     </section>
 
-    <!-- FORMULARIO DE CONTACTO (alberdi.andres@gmail.com) -->
+    <!-- FORMULARIO DE CONTACTO (andres.alberdi@aab1.website) -->
     <section id="contacto">
       <div class="container contact-grid">
         <div class="contact-info animate-on-scroll">
@@ -623,7 +629,10 @@
               <div class="link-icon"><span class="material-icons-round">email</span></div>
               <div>
                 <h4 style="font-size: 0.95rem;" data-i18n="contact_email_title">Correo Principal</h4>
-                <p style="color: var(--accent-light); font-weight: 600;">alberdi.andres@gmail.com<br>aalberdi@gmail.com</p>
+                <p style="color: var(--accent-light); font-weight: 600;">
+                  <a href="mailto:andres.alberdi@aab1.website" style="color: inherit; text-decoration: none;">andres.alberdi@aab1.website</a><br>
+                  <a href="mailto:alberdi.andres@gmail.com" style="color: inherit; text-decoration: none;">alberdi.andres@gmail.com</a>
+                </p>
               </div>
             </div>
 
@@ -631,7 +640,9 @@
               <div class="link-icon"><span class="material-icons-round">phone</span></div>
               <div>
                 <h4 style="font-size: 0.95rem;" data-i18n="contact_phone_title">Celular / WhatsApp</h4>
-                <p style="color: var(--text-title); font-weight: 500;">(+591) 72047339</p>
+                <p style="color: var(--text-title); font-weight: 500;">
+                  <a href="https://wa.me/59172047339" target="_blank" style="color: inherit; text-decoration: none;">(+591) 72047339</a>
+                </p>
               </div>
             </div>
 
@@ -662,8 +673,21 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="phone" data-i18n="form_phone_label">Teléfono / WhatsApp</label>
-                <input type="text" id="phone" class="form-control" placeholder="+591 70000000"
-                  data-i18n-ph="form_phone_ph">
+                <div style="display: flex; gap: 0.5rem;">
+                  <select id="country-code" class="form-control" style="width: auto; padding: 0.5rem;" aria-label="Country Code">
+                    <option value="+591" selected>+591 (BO)</option>
+                    <option value="+1">+1 (US/CA)</option>
+                    <option value="+34">+34 (ES)</option>
+                    <option value="+52">+52 (MX)</option>
+                    <option value="+54">+54 (AR)</option>
+                    <option value="+55">+55 (BR)</option>
+                    <option value="+56">+56 (CL)</option>
+                    <option value="+57">+57 (CO)</option>
+                    <option value="+51">+51 (PE)</option>
+                  </select>
+                  <input type="tel" id="phone" class="form-control" placeholder="70000000"
+                    data-i18n-ph="form_phone_ph" style="flex: 1;">
+                </div>
               </div>
             </div>
 
@@ -712,7 +736,7 @@
             <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;"
               data-i18n="form_success_desc">
               Gracias por escribir a AAB1. Nos pondremos en contacto contigo a la brevedad a través de
-              <strong>alberdi.andres@gmail.com</strong> o <strong>aalberdi@gmail.com</strong>.
+              <strong>andres.alberdi@aab1.website</strong> o <strong>alberdi.andres@gmail.com</strong>.
             </p>
             <button class="btn btn-secondary" id="reset-contact-form-btn" data-i18n="form_btn_reset">Enviar otro
               requerimiento</button>

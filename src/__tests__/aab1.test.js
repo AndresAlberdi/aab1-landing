@@ -5,8 +5,8 @@ import { translations } from '../i18n/translations';
 
 describe('AAB1 Unit Test Battery', () => {
 
-  it('Verifica el correo de notificación de leads oficial (alberdi.andres@gmail.com)', () => {
-    expect(TARGET_LEAD_EMAIL).toBe('alberdi.andres@gmail.com');
+  it('Verifica el correo de notificación de leads oficial (andres.alberdi@aab1.website)', () => {
+    expect(TARGET_LEAD_EMAIL).toBe('andres.alberdi@aab1.website');
   });
 
   it('Verifica la existencia de claves de traducción para ES y EN', () => {

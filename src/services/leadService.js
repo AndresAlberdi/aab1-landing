@@ -1,7 +1,7 @@
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';
 
-export const TARGET_LEAD_EMAIL = 'alberdi.andres@gmail.com';
+export const TARGET_LEAD_EMAIL = 'andres.alberdi@aab1.website';
 
 export async function saveLead(leadData) {
   const payload = {

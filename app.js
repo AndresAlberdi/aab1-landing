@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   animateElements.forEach(el => scrollObserver.observe(el));
 
-  // 5. Manejo del Formulario de Contacto (Leads -> alberdi.andres@gmail.com o aalberdi@gmail.com)
+  // 5. Manejo del Formulario de Contacto (Leads -> andres.alberdi@aab1.website)
   const contactForm = document.getElementById('aab1-contact-form');
   const formSuccessBox = document.getElementById('form-success-box');
   const resetFormBtn = document.getElementById('reset-contact-form-btn');
@@ -132,13 +132,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
 
+      const emailInput = document.getElementById('email')?.value || '';
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput)) {
+        alert("Por favor ingrese un correo electrónico válido / Please enter a valid email");
+        return;
+      }
+
       submitBtn.disabled = true;
-      submitBtn.innerHTML = `Enviando a alberdi.andres@gmail.com o aalberdi@gmail.com... <span class="material-icons-round" style="animation: float 1s infinite;">hourglass_empty</span>`;
+      submitBtn.innerHTML = `Enviando a andres.alberdi@aab1.website... <span class="material-icons-round" style="animation: float 1s infinite;">hourglass_empty</span>`;
 
       const leadData = {
         name: document.getElementById('name')?.value || '',
         email: document.getElementById('email')?.value || '',
-        phone: document.getElementById('phone')?.value || '',
+        phone: (document.getElementById('country-code')?.value || '') + ' ' + (document.getElementById('phone')?.value || ''),
         company: document.getElementById('company')?.value || '',
         service: document.getElementById('service')?.value || '',
         message: document.getElementById('message')?.value || ''
@@ -211,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         console.error("Error en Chat IA:", err);
         loadingEl.remove();
-        appendChatMessage('bot', 'No pude procesar la consulta en este momento. Puedes escribir directamente a Javier Andres Alberdi Baptista a **alberdi.andres@gmail.com o aalberdi@gmail.com**.');
+        appendChatMessage('bot', 'No pude procesar la consulta en este momento. Puedes escribir directamente a Javier Andres Alberdi Baptista a **andres.alberdi@aab1.website** o **alberdi.andres@gmail.com**.');
       }
     });
   }

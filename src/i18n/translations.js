@@ -13,7 +13,7 @@ export const translations = {
     hero_badge: "Empresa Unipersonal Boliviana",
     hero_title_1: "Arquitectura de",
     hero_title_gradient: "Nube, IA & Blockchain",
-    hero_description: "Consultoría tecnológica de alto nivel para empresas y gobiernos. Diseñamos ecosistemas digitales resilientes, procesamiento en la nube e Inteligencia Artificial aplicada.",
+    hero_description: "Consultoría tecnológica de alto nivel para empresas y gobierno. Diseñamos ecosistemas digitales resilientes, procesamiento en la nube e Inteligencia Artificial aplicada.",
     hero_btn_contact: "Iniciar Consultoría",
     hero_btn_project: "Ver Proyecto Estrella",
 
@@ -127,7 +127,7 @@ export const translations = {
     form_msg_ph: "Describa brevemente el alcance de su proyecto...",
     form_btn_submit: "Enviar Mensaje a AAB1",
     form_success_title: "¡Mensaje Enviado con Éxito!",
-    form_success_desc: "Gracias por escribir a AAB1. Nos pondremos en contacto contigo a la brevedad a través de <strong>alberdi.andres@gmail.com</strong>.",
+    form_success_desc: "Gracias por escribir a AAB1. Nos pondremos en contacto contigo a la brevedad a través de <strong>andres.alberdi@aab1.website</strong>.",
     form_btn_reset: "Enviar otro requerimiento",
 
     footer_desc: "— Consultoría Tecnológica Avanzada",
@@ -177,8 +177,8 @@ export const translations = {
     privacy_sec7_desc: "Si tiene preguntas, inquietudes o desea ejercer alguno de sus derechos sobre su información personal, por favor comuníquese directamente conmigo:",
     privacy_contact_name: "Javier Andres Alberdi Baptista",
     privacy_contact_role: "Director & Consultor Senior, AAB1",
-    privacy_contact_email: "Correo electrónico: alberdi.andres@gmail.com o aalberdi@gmail.com",
-    privacy_contact_phone: "Teléfono: +591-72047339",
+    privacy_contact_email: "Correo electrónico: <a href=\"mailto:andres.alberdi@aab1.website\" style=\"color: inherit; text-decoration: none;\">andres.alberdi@aab1.website</a> o <a href=\"mailto:alberdi.andres@gmail.com\" style=\"color: inherit; text-decoration: none;\">alberdi.andres@gmail.com</a>",
+    privacy_contact_phone: "Teléfono: <a href=\"https://wa.me/59172047339\" target=\"_blank\" style=\"color: inherit; text-decoration: none;\">+591-72047339</a>",
     privacy_footer_agreement: "Al utilizar nuestros servicios y sitios web, usted acepta los términos delineados en esta Política de Privacidad y Seguridad."
   },
 
@@ -306,7 +306,7 @@ export const translations = {
     form_msg_ph: "Describe the scope of your project...",
     form_btn_submit: "Send Message to AAB1",
     form_success_title: "Message Sent Successfully!",
-    form_success_desc: "Thank you for contacting AAB1. We will reach out to you shortly via <strong>alberdi.andres@gmail.com</strong>.",
+    form_success_desc: "Thank you for contacting AAB1. We will reach out to you shortly via <strong>andres.alberdi@aab1.website</strong>.",
     form_btn_reset: "Send another request",
 
     footer_desc: "— Advanced Technology Consulting",
@@ -356,8 +356,8 @@ export const translations = {
     privacy_sec7_desc: "If you have questions, concerns, or wish to exercise any of your rights regarding your personal information, please contact me directly:",
     privacy_contact_name: "Javier Andres Alberdi Baptista",
     privacy_contact_role: "Director & Senior Consultant, AAB1",
-    privacy_contact_email: "Email: alberdi.andres@gmail.com or aalberdi@gmail.com",
-    privacy_contact_phone: "Phone: +591-72047339",
+    privacy_contact_email: "Email: <a href=\"mailto:andres.alberdi@aab1.website\" style=\"color: inherit; text-decoration: none;\">andres.alberdi@aab1.website</a> or <a href=\"mailto:alberdi.andres@gmail.com\" style=\"color: inherit; text-decoration: none;\">alberdi.andres@gmail.com</a>",
+    privacy_contact_phone: "Phone: <a href=\"https://wa.me/59172047339\" target=\"_blank\" style=\"color: inherit; text-decoration: none;\">+591-72047339</a>",
     privacy_footer_agreement: "By using our services and websites, you agree to the terms outlined in this Privacy and Security Policy."
   }
 };
