@@ -131,7 +131,7 @@ export const translations = {
     form_btn_reset: "Enviar otro requerimiento",
 
     footer_desc: "— Consultoría Tecnológica Avanzada",
-    footer_rights: "&copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). Todos los derechos reservados.",
+    footer_rights: "&copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). Todos los derechos reservados. | <a href=\"/privacidad.html\" style=\"color: var(--primary); text-decoration: none;\">Política de Privacidad</a>",
     
     ai_bot_greeting: "¡Hola! 👋 Soy el Asistente Virtual de <strong>AAB1</strong>. ¿En qué puedo ayudarte sobre nuestros servicios de consultoría tecnológica, procesamiento en la nube o sobre nuestro proyecto estrella <strong>ENCUENTRAME.BO</strong>?",
     ai_bot_placeholder: "Escribe tu consulta...",
@@ -310,7 +310,7 @@ export const translations = {
     form_btn_reset: "Send another request",
 
     footer_desc: "— Advanced Technology Consulting",
-    footer_rights: "&copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). All rights reserved.",
+    footer_rights: "&copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). All rights reserved. | <a href=\"/privacidad.html\" style=\"color: var(--primary); text-decoration: none;\">Privacy Policy</a>",
 
     ai_bot_greeting: "Hello! 👋 I am the Virtual Assistant of <strong>AAB1</strong>. How can I help you regarding our IT consulting services, cloud processing, or our featured project <strong>ENCUENTRAME.BO</strong>?",
     ai_bot_placeholder: "Type your query...",
