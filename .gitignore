@@ -10,9 +10,8 @@ dist-ssr
 *.local
 
 # Variables de entorno y llaves secretas
-.env
-.env.local
-.env.*.local
+.env*
+!.env.example
 *.pem
 *.key
 

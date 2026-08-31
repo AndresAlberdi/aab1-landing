@@ -1,3 +1,6 @@
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import { app } from '../config/firebase.js';
+
 /* ======================================================
    AGENTE CONVERSACIONAL IA - AAB1 (RAG + GEMINI 2.0/1.5)
    ====================================================== */
@@ -86,7 +89,6 @@ export function detectLanguage(text) {
 }
 
 export async function askAAB1Assistant(userMessage, history = []) {
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
   const cleanMsg = (userMessage || '').toLowerCase().trim();
   const detectedLang = detectLanguage(userMessage);
 
@@ -97,40 +99,18 @@ export async function askAAB1Assistant(userMessage, history = []) {
       : "Por políticas de seguridad y confidencialidad, la información sobre accesos administrativos, contraseñas o arquitectura interna es estrictamente confidencial. Para consultas formales, puedes escribir a **andres.alberdi@aab1.website**.";
   }
 
-  // 1. Consulta a Gemini API con detección automática de idioma
-  if (apiKey) {
-    const modelsToTry = ['gemini-2.0-flash', 'gemini-1.5-flash-latest'];
-    for (const model of modelsToTry) {
-      try {
-        const formattedHistory = history.map(item => ({
-          role: item.sender === 'user' ? 'user' : 'model',
-          parts: [{ text: item.text }]
-        }));
-
-        const contents = [
-          ...formattedHistory,
-          { role: 'user', parts: [{ text: userMessage }] }
-        ];
-
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            system_instruction: { parts: [{ text: SECURITY_SYSTEM_PROMPT }] },
-            contents,
-            generationConfig: { temperature: 0.15, maxOutputTokens: 450 }
-          })
-        });
-
-        if (response.ok) {
-          const data = await response.json();
-          const candidateText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-          if (candidateText) return candidateText.trim();
-        }
-      } catch (err) {
-        // Fallthrough a RAG local con idioma detectado
-      }
+  // 1. Consulta a Gemini API a través de Firebase Functions onCall
+  try {
+    const functions = getFunctions(app);
+    const asistente = httpsCallable(functions, 'asistente');
+    const result = await asistente({ userMessage, history });
+    
+    if (result.data && result.data.response) {
+      return result.data.response;
     }
+  } catch (err) {
+    // Fallback a RAG local si la Cloud Function falla, App Check rechaza o no hay red
+    console.error("Error llamando a asistente onCall:", err);
   }
 
   // 2. Motor RAG Local (Zero-Database) de Respaldo Instantáneo con detección de idioma
