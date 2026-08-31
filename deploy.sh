@@ -16,7 +16,7 @@ fi
 
 echo "=== [3/4] Compilando y publicando en Firebase ($PROJECT_ID) ==="
 npm run build
-npx -y firebase-tools@latest deploy --project "$PROJECT_ID" --only hosting
+npx -y firebase-tools@latest deploy --project "$PROJECT_ID" --only hosting,functions --force
 
 echo "=== [4/4] Confirmando y subiendo cambios a GitHub ==="
 git add .
