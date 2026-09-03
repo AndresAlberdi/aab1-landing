@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         console.error("Error en Chat IA:", err);
         loadingEl.remove();
-        appendChatMessage('bot', 'No pude procesar la consulta en este momento. Puedes escribir directamente a Javier Andres Alberdi Baptista a **andres.alberdi@aab1.website** o **alberdi.andres@gmail.com**.');
+        appendChatMessage('bot', 'No pude procesar la consulta en este momento. Puedes escribir directamente a Javier Andres Alberdi Baptista a **andres.alberdi@aab1.website**.');
       }
     });
   }
