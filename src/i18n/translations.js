@@ -214,7 +214,18 @@ export const translations = {
     privacy_sec9_title: "9. Ley aplicable y cambios",
     privacy_sec9_desc: "Esta política se rige por la legislación del Estado Plurinacional de Bolivia.",
     privacy_sec9_desc2: "Podemos actualizarla para reflejar cambios en nuestros servicios o en la normativa aplicable. La fecha de \"Última actualización\" del encabezado indica la versión vigente. Los cambios sustanciales se comunicarán por los medios de contacto disponibles.",
-
+    
+    tos_3_title: "3. Servicio de mensajería por WhatsApp",
+    tos_3_p1: "Parte de nuestros servicios opera sobre la WhatsApp Business Cloud API de Meta Platforms, Inc., para el envío de códigos de verificación de un solo uso (OTP) y notificaciones transaccionales.",
+    tos_3_p2: "<strong>Reglas de la plataforma.</strong> El uso de este servicio está sujeto, además de a estas Condiciones, a las políticas de Meta que rigen la Plataforma de WhatsApp Business, en particular su política de mensajería y sus condiciones para empresas. Esto tiene dos consecuencias prácticas:",
+    tos_3_li1: "Meta puede restringir, suspender o eliminar una cuenta de WhatsApp Business por su propia decisión. AAB1 no controla esas decisiones y no puede garantizar la continuidad de un canal que no le pertenece.",
+    tos_3_li2: "Las plantillas de mensaje requieren aprobación previa de Meta. Un mensaje puede no entregarse por causas ajenas a AAB1: número inexistente, dispositivo sin conexión o bloqueo por parte del destinatario.",
+    tos_3_p3: "<strong>Prohibiciones específicas.</strong> La empresa cliente se obliga a no enviar mensajes no solicitados, a no suplantar la identidad de terceros y, en particular, a NO solicitar códigos de verificación para números de teléfono sobre los que no tenga una relación legítima con su titular, ni a usar la plataforma como paso intermedio de un fraude de verificación. El incumplimiento faculta a AAB1 a suspender el servicio de inmediato y sin aviso previo.",
+    tos_3_p4: "<strong>Sobre los códigos de verificación.</strong> Los códigos son personales, de un solo uso y caducan a los 5 minutos. AAB1 nunca los solicita por teléfono, correo ni ningún otro medio. Para dejar de recibir nuestros mensajes, responda BAJA por el mismo chat de WhatsApp o escriba a andres.alberdi@aab1.website.",
+    
+    data_deletion_wa_title: "Datos de WhatsApp",
+    data_deletion_wa_p1: "Si recibió mensajes nuestros por WhatsApp, conservamos: su número de teléfono, el identificador del mensaje asignado por Meta, su estado de entrega y las marcas de tiempo. Los códigos de verificación NO se guardan en texto claro en ningún momento: solo un hash con salt, que se elimina al vencer el código o al ser utilizado.",
+    data_deletion_wa_p2: "Para solicitar la eliminación de estos datos, envíe un correo a andres.alberdi@aab1.website indicando el número de teléfono afectado en formato internacional. También puede responder BAJA por el mismo chat de WhatsApp para dejar de recibir mensajes de inmediato.",
   },
 
   en: {
@@ -428,6 +439,17 @@ export const translations = {
     privacy_sec9_title: "9. Applicable law and changes",
     privacy_sec9_desc: "This policy is governed by the laws of the Plurinational State of Bolivia.",
     privacy_sec9_desc2: "We may update it to reflect changes in our services or applicable regulations. The \"Last updated\" date in the header indicates the current version. Substantial changes will be communicated through available contact channels.",
-
+    
+    tos_3_title: "3. WhatsApp Messaging Service",
+    tos_3_p1: "Part of our services operates on Meta Platforms, Inc.'s WhatsApp Business Cloud API for sending one-time passwords (OTP) and transactional notifications.",
+    tos_3_p2: "<strong>Platform rules.</strong> The use of this service is subject, in addition to these Terms, to the Meta policies governing the WhatsApp Business Platform, in particular its messaging policy and its business terms. This has two practical consequences:",
+    tos_3_li1: "Meta can restrict, suspend or delete a WhatsApp Business account at its own discretion. AAB1 does not control those decisions and cannot guarantee the continuity of a channel it does not own.",
+    tos_3_li2: "Message templates require prior approval from Meta. A message may not be delivered for reasons beyond AAB1's control: non-existent number, offline device, or block by the recipient.",
+    tos_3_p3: "<strong>Specific prohibitions.</strong> The client company obliges itself not to send unsolicited messages, not to impersonate third parties and, in particular, NOT to request verification codes for phone numbers for which it does not have a legitimate relationship with its owner, nor to use the platform as an intermediate step in a verification fraud. Non-compliance empowers AAB1 to suspend the service immediately and without prior notice.",
+    tos_3_p4: "<strong>Regarding verification codes.</strong> Codes are personal, for one-time use and expire in 5 minutes. AAB1 never requests them by phone, email, or any other means. To stop receiving our messages, reply STOP via the same WhatsApp chat or write to andres.alberdi@aab1.website.",
+    
+    data_deletion_wa_title: "WhatsApp Data",
+    data_deletion_wa_p1: "If you received messages from us via WhatsApp, we retain: your phone number, the message identifier assigned by Meta, its delivery status, and timestamps. Verification codes are NEVER stored in clear text at any time: only a salted hash is kept, which is deleted upon code expiration or usage.",
+    data_deletion_wa_p2: "To request the deletion of this data, send an email to andres.alberdi@aab1.website indicating the affected phone number in international format. You can also reply STOP in the same WhatsApp chat to immediately stop receiving messages.",
   }
 };
