@@ -58,4 +58,16 @@ describe('AAB1 Unit Test Battery', () => {
     expect(response).toContain('Hipatia');
   });
 
+  it('Verifica que todas las claves del servicio de mensajería por WhatsApp existen en ES y EN', () => {
+    const keys = [
+      'wa_page_title', 'wa_h1', 'wa_updated', 'wa_meta_compliance_title',
+      'wa_sec1_title', 'wa_sec1_p1', 'wa_sec2_title', 'wa_sec3_title',
+      'wa_sec4_title', 'wa_sec5_title', 'wa_sec6_title', 'wa_sec7_title'
+    ];
+    for (const key of keys) {
+      expect(translations.es[key]).toBeDefined();
+      expect(translations.en[key]).toBeDefined();
+    }
+  });
+
 });

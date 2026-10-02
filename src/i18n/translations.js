@@ -226,6 +226,53 @@ export const translations = {
     data_deletion_wa_title: "Datos de WhatsApp",
     data_deletion_wa_p1: "Si recibió mensajes nuestros por WhatsApp, conservamos: su número de teléfono, el identificador del mensaje asignado por Meta, su estado de entrega y las marcas de tiempo. Los códigos de verificación NO se guardan en texto claro en ningún momento: solo un hash con salt, que se elimina al vencer el código o al ser utilizado.",
     data_deletion_wa_p2: "Para solicitar la eliminación de estos datos, envíe un correo a andres.alberdi@aab1.website indicando el número de teléfono afectado en formato internacional. También puede responder BAJA por el mismo chat de WhatsApp para dejar de recibir mensajes de inmediato.",
+
+    // ==========================================
+    // MENSAJERÍA POR WHATSAPP (AAB1 & META)
+    // ==========================================
+    wa_page_title: "Servicio de Mensajería por WhatsApp | AAB1",
+    wa_h1: "Servicio de Mensajería por WhatsApp",
+    wa_updated: "Última actualización: Octubre de 2026",
+    wa_meta_compliance_title: "Operación sobre la API oficial de WhatsApp Business (Meta Platforms)",
+    wa_meta_compliance_desc: "AAB1 provee a sus empresas clientes una solución técnica de mensajería construida estrictamente sobre la WhatsApp Business Cloud API oficial de Meta Platforms, Inc., permitiendo automatizar comunicaciones operativas y de soporte con sus propios usuarios finales.",
+    
+    wa_sec1_title: "1. Qué es el servicio y a quién está dirigido",
+    wa_sec1_p1: "AAB1 es una empresa boliviana de consultoría tecnológica. Ofrece a otras empresas, nuestros clientes, un servicio de mensajería por WhatsApp para enviar avisos y confirmaciones, códigos de verificación y respuestas a las consultas de sus propios clientes.",
+    wa_sec1_p2: "Está dirigido a organizaciones y empresas que requieren una vía formal, segura y automatizada para mantener informados a sus clientes finales, confirmar operaciones y resolver sus consultas cotidianas a través del canal oficial de WhatsApp.",
+
+    wa_sec2_title: "2. Tipos de mensaje que se envían",
+    wa_sec2_intro: "El servicio opera de forma estricta sobre la API oficial de WhatsApp Business de Meta, cubriendo exclusivamente las siguientes modalidades de comunicación:",
+    wa_sec2_li1: "<strong>Avisos y confirmaciones:</strong> Notificaciones transaccionales, confirmaciones de trámites, recordatorios de citas o turnos, y comprobantes de operaciones solicitadas directamente por el usuario final.",
+    wa_sec2_li2: "<strong>Códigos de verificación (OTP):</strong> Envío de contraseñas de un solo uso para verificar la identidad y titularidad del número telefónico y autenticar accesos o transacciones.",
+    wa_sec2_li3: "<strong>Respuestas a consultas:</strong> Respuestas oportunas e individuales a preguntas, requerimientos operativos y solicitudes de soporte iniciadas por los clientes finales de cada empresa.",
+    wa_sec2_note: "<strong>Uso estrictamente transaccional y de atención:</strong> No prestamos servicios para campañas masivas de publicidad no solicitada ni difusión comercial indiscriminada. Todo envío se efectúa con base en una interacción previa legítima.",
+
+    wa_sec3_title: "3. Cómo se conecta una empresa cliente",
+    wa_sec3_intro: "La integración se realiza siguiendo el flujo estándar y auditado de Meta:",
+    wa_sec3_li1: "<strong>Registro oficial en <code>wa.aab1.website/alta</code>:</strong> Cada empresa cliente conecta su cuenta de WhatsApp Business mediante el proceso de registro integrado (Embedded Signup) de Meta y nos autoriza a operarla.",
+    wa_sec3_li2: "<strong>Titularidad de la cuenta:</strong> La empresa cliente mantiene en todo momento la titularidad, propiedad y control de su cuenta de WhatsApp Business y su número de teléfono ante Meta.",
+    wa_sec3_li3: "<strong>Alcance de la autorización:</strong> La empresa cliente autoriza a AAB1 a operar la cuenta en su nombre únicamente para: enviar y recibir los mensajes acordados, crear y gestionar sus plantillas de mensaje ante Meta, y mostrarle el estado de entrega de sus envíos (enviado, entregado, leído o fallido).",
+
+    wa_sec4_title: "4. Tratamiento y protección de datos (AAB1 como encargado)",
+    wa_sec4_p1: "<strong>AAB1 actúa como encargado del tratamiento; la empresa cliente es la responsable de los datos de sus contactos.</strong> Esta separación de roles es coherente con el apartado 2.5 de nuestra <a href=\"/privacidad.html\" style=\"color: var(--primary); text-decoration: underline;\">Política de Privacidad</a>.",
+    wa_sec4_p2: "Usamos los datos que recibimos de Meta solo para enviar y recibir los mensajes de cada cliente en su nombre, crear sus plantillas de mensaje y mostrarle el estado de sus envíos.",
+    wa_sec4_li1: "<strong>Separación de datos:</strong> Los datos de un cliente se mantienen estrictamente separados de los de otro cliente en entornos aislados.",
+    wa_sec4_li2: "<strong>Prohibición de comercialización:</strong> No vendemos, no alquilamos ni usamos los datos para otros fines ajenos a la prestación técnica del servicio.",
+    wa_sec4_li3: "<strong>Seguridad en códigos de verificación:</strong> Los códigos de verificación nunca se almacenan en texto claro; únicamente se almacena un resumen criptográfico con sal (hash SHA-256) que expira a los 5 minutos y se elimina automáticamente.",
+    wa_sec4_policies: "Para consultar los detalles de nuestros compromisos de seguridad y privacidad, revise nuestra <a href=\"/privacidad.html\" style=\"color: var(--primary); text-decoration: underline;\">Política de Privacidad</a>, las <a href=\"/condiciones.html\" style=\"color: var(--primary); text-decoration: underline;\">Condiciones del Servicio</a> y las instrucciones para la <a href=\"/data-deletion.html\" style=\"color: var(--primary); text-decoration: underline;\">Eliminación de Datos</a>.",
+
+    wa_sec5_title: "5. Reglas de la plataforma de Meta y servicios futuros",
+    wa_sec5_li1: "<strong>Políticas de Meta:</strong> El servicio está sujeto a las directrices de la Plataforma de WhatsApp Business. Meta puede restringir, suspender o eliminar una cuenta de WhatsApp Business por su propia decisión. AAB1 no controla esas decisiones ni puede garantizar la continuidad de un canal ajeno. Asimismo, las plantillas de mensaje requieren aprobación previa de Meta para su uso.",
+    wa_sec5_li2: "<strong>Servicios futuros:</strong> Cualquier ampliación o servicio futuro se ofrecerá únicamente en términos generales y se implementará siempre con autorización previa y expresa de la empresa cliente.",
+
+    wa_sec6_title: "6. Cómo retirar el acceso de AAB1 y canales de contacto",
+    wa_sec6_intro: "Tanto las empresas clientes como sus usuarios finales pueden dar por concluida la interacción en cualquier momento:",
+    wa_sec6_li1: "<strong>Para la empresa cliente:</strong> La empresa puede retirar el acceso de AAB1 a su cuenta de WhatsApp Business cuando quiera, directamente desde su Administrador Comercial de Meta o notificándonos por escrito.",
+    wa_sec6_li2: "<strong>Para el usuario final:</strong> Puede dejar de recibir mensajes respondiendo <strong>BAJA</strong> por el mismo chat de WhatsApp, bloqueando el remitente desde la aplicación, o ejerciendo sus derechos de supresión.",
+    wa_sec6_li3: "<strong>Contacto oficial:</strong> Para cualquier consulta, soporte técnico o solicitud de revocación, escriba a: <strong>andres.alberdi@aab1.website</strong>.",
+
+    wa_sec7_title: "7. Datos de la empresa",
+    wa_sec7_content: "<strong>AAB1</strong> — Empresa Unipersonal Boliviana<br><strong>Titular:</strong> Javier Andres Alberdi Baptista<br><strong>Domicilio:</strong> La Paz, Bolivia<br><strong>Correo electrónico:</strong> andres.alberdi@aab1.website<br><strong>Sitio web:</strong> <a href=\"https://aab1.website\" style=\"color: var(--primary); text-decoration: underline;\">https://aab1.website</a>",
   },
 
   en: {
@@ -451,5 +498,52 @@ export const translations = {
     data_deletion_wa_title: "WhatsApp Data",
     data_deletion_wa_p1: "If you received messages from us via WhatsApp, we retain: your phone number, the message identifier assigned by Meta, its delivery status, and timestamps. Verification codes are NEVER stored in clear text at any time: only a salted hash is kept, which is deleted upon code expiration or usage.",
     data_deletion_wa_p2: "To request the deletion of this data, send an email to andres.alberdi@aab1.website indicating the affected phone number in international format. You can also reply STOP in the same WhatsApp chat to immediately stop receiving messages.",
+
+    // ==========================================
+    // WHATSAPP MESSAGING SERVICE (AAB1 & META)
+    // ==========================================
+    wa_page_title: "WhatsApp Messaging Service | AAB1",
+    wa_h1: "WhatsApp Messaging Service",
+    wa_updated: "Last updated: October 2026",
+    wa_meta_compliance_title: "Operation on the Official WhatsApp Business API (Meta Platforms)",
+    wa_meta_compliance_desc: "AAB1 provides client businesses with a technical messaging solution built strictly on Meta Platforms, Inc.'s official WhatsApp Business Cloud API, enabling automated operational and support communications with their own end users.",
+    
+    wa_sec1_title: "1. Service Description and Target Audience",
+    wa_sec1_p1: "AAB1 is a Bolivian technology consulting firm. We offer other companies, our clients, a WhatsApp messaging service to send notices and confirmations, verification codes, and responses to inquiries from their own customers.",
+    wa_sec1_p2: "It is designed for organizations and businesses that require a formal, secure, and automated channel to keep their end customers informed, confirm transactions, and handle day-to-day inquiries through the official WhatsApp channel.",
+
+    wa_sec2_title: "2. Types of Messages Sent",
+    wa_sec2_intro: "The service operates strictly on Meta's official WhatsApp Business API, exclusively covering the following communication methods:",
+    wa_sec2_li1: "<strong>Notices and confirmations:</strong> Transactional notifications, status updates, appointment reminders, and receipts for operations requested directly by the end user.",
+    wa_sec2_li2: "<strong>Verification codes (OTP):</strong> One-time passwords sent to verify identity or phone number ownership and authenticate logins or transactions.",
+    wa_sec2_li3: "<strong>Responses to customer inquiries:</strong> Timely and individualized answers to questions, operational requests, and support queries initiated by each client's end users.",
+    wa_sec2_note: "<strong>Strictly transactional and support use:</strong> We do not provide services for unsolicited bulk messaging or indiscriminate marketing campaigns. Every interaction is based on a prior legitimate customer interaction.",
+
+    wa_sec3_title: "3. How a Client Company Connects",
+    wa_sec3_intro: "Integration follows Meta's standard and audited process:",
+    wa_sec3_li1: "<strong>Official onboarding at <code>wa.aab1.website/alta</code>:</strong> Each client company connects its WhatsApp Business account through Meta's Embedded Signup flow and authorizes us to operate it.",
+    wa_sec3_li2: "<strong>Account ownership:</strong> The client company retains full ownership, title, and administrative control of its WhatsApp Business account and phone numbers at all times.",
+    wa_sec3_li3: "<strong>Scope of authorization:</strong> The client company authorizes AAB1 to operate the account on its behalf solely to: send and receive agreed messages, create and manage message templates with Meta, and display the delivery status of its outbound messages (sent, delivered, read, or failed).",
+
+    wa_sec4_title: "4. Data Processing and Protection (AAB1 as Data Processor)",
+    wa_sec4_p1: "<strong>AAB1 acts as a data processor; the client company is the data controller for its contacts' data.</strong> This role separation is aligned with Section 2.5 of our <a href=\"/privacidad.html\" style=\"color: var(--primary); text-decoration: underline;\">Privacy Policy</a>.",
+    wa_sec4_p2: "We use the data received from Meta solely to send and receive messages on behalf of each client, manage message templates, and display delivery statuses.",
+    wa_sec4_li1: "<strong>Data segregation:</strong> Each client's data and communications are kept strictly segregated and isolated from any other client.",
+    wa_sec4_li2: "<strong>No commercialization:</strong> We do not sell, rent, monetize, or use data for any purpose other than providing the agreed technical service.",
+    wa_sec4_li3: "<strong>Verification code security:</strong> Verification codes are never stored in plain text; only a salted one-way cryptographic hash (SHA-256) is held, which strictly expires in 5 minutes and is deleted immediately upon use or expiration.",
+    wa_sec4_policies: "For full details regarding our security and privacy commitments, review our <a href=\"/privacidad.html\" style=\"color: var(--primary); text-decoration: underline;\">Privacy Policy</a>, our <a href=\"/condiciones.html\" style=\"color: var(--primary); text-decoration: underline;\">Terms of Service</a>, and the <a href=\"/data-deletion.html\" style=\"color: var(--primary); text-decoration: underline;\">Data Deletion Instructions</a>.",
+
+    wa_sec5_title: "5. Meta Platform Rules and Future Services",
+    wa_sec5_li1: "<strong>Meta Policies:</strong> The service is governed by Meta's WhatsApp Business Platform terms. Meta may restrict, suspend, or terminate a WhatsApp Business account at its own discretion. AAB1 does not control these decisions and cannot guarantee the continuity of a third-party channel. In addition, all message templates require Meta's prior review and approval.",
+    wa_sec5_li2: "<strong>Future services:</strong> Any functional enhancements or future services will only be framed in general terms and will always be implemented with the prior express authorization of each client company.",
+
+    wa_sec6_title: "6. Revoking Access and Contact Channels",
+    wa_sec6_intro: "Both client businesses and their end users have immediate and direct mechanisms to manage permissions:",
+    wa_sec6_li1: "<strong>For client companies:</strong> The client company may revoke and withdraw AAB1's access to its WhatsApp Business account at any time via its Meta Business Manager or by notifying us in writing.",
+    wa_sec6_li2: "<strong>For end users:</strong> Recipients may stop receiving messages at any time by replying <strong>BAJA</strong> or <strong>STOP</strong> in the WhatsApp chat, blocking the sender in the app, or exercising their data deletion rights.",
+    wa_sec6_li3: "<strong>Official contact:</strong> For inquiries, technical support, or revocation requests, please email: <strong>andres.alberdi@aab1.website</strong>.",
+
+    wa_sec7_title: "7. Company Information",
+    wa_sec7_content: "<strong>AAB1</strong> — Bolivian Sole Proprietorship<br><strong>Owner:</strong> Javier Andres Alberdi Baptista<br><strong>Address:</strong> La Paz, Bolivia<br><strong>Email:</strong> andres.alberdi@aab1.website<br><strong>Official Website:</strong> <a href=\"https://aab1.website\" style=\"color: var(--primary); text-decoration: underline;\">https://aab1.website</a>",
   }
 };
