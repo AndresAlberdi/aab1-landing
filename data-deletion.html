@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5F1DXQXWM7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5F1DXQXWM7');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="data_deletion_page_title">Eliminación de Datos | Data Deletion - AAB1</title>
+  <meta name="description" content="Instrucciones para la eliminación de datos en AAB1. User data deletion instructions.">
+  <link rel="icon" type="image/png" href="assets/aab1-logo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .privacy-container {
+      max-width: 800px;
+      margin: 120px auto 60px auto;
+      padding: 2rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--card-shadow);
+      color: var(--text-color);
+    }
+    .privacy-container h1 {
+      font-size: 2.2rem;
+      color: var(--text-title);
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+    }
+    .privacy-container h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .privacy-container h3 {
+      font-size: 1.2rem;
+      color: var(--text-title);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .privacy-container p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .privacy-container ul {
+      margin-left: 20px;
+      margin-bottom: 1rem;
+    }
+    .privacy-container li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    .privacy-container strong {
+      color: var(--text-title);
+    }
+    .lang-section {
+      margin-bottom: 4rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .lang-section:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header / Navegación -->
+  <header id="header" style="background: var(--nav-bg); backdrop-filter: blur(10px);">
+    <div class="container nav-container">
+      <a href="/index.html" class="logo">
+        <img src="assets/aab1-logo.png" alt="Logo AAB1" class="logo-img">
+        <span>AAB1</span>
+      </a>
+      <div class="nav-actions">
+        <!-- BOTÓN TRADUCCIÓN IDIOMA (ES / EN) -->
+        <button id="lang-toggle" class="theme-toggle" aria-label="Cambiar idioma / Switch language"
+          title="Cambiar Idioma ES/EN" style="font-weight: 700; font-size: 0.82rem; padding: 0 0.6rem; gap: 0.3rem;">
+          <span class="material-icons-round" style="font-size: 1.1rem;">language</span>
+          <span id="lang-label">EN</span>
+        </button>
+
+        <!-- BOTÓN MODO DÍA / NOCHE -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema día/noche" title="Cambiar Modo Día/Noche">
+          <span class="material-icons-round">light_mode</span>
+        </button>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/index.html" class="nav-link">Volver al Inicio</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container privacy-container">
+    <h1>Eliminación de Datos / Data Deletion</h1>
+
+    <!-- ESPAÑOL -->
+    <div class="lang-section" id="es">
+      <h2>Instrucciones para la Eliminación de Datos de Usuario (Español)</h2>
+      <p>En AAB1 respetamos su privacidad y cumplimos con los estándares de protección de datos (incluidas las normativas exigidas por plataformas como Meta y Google). Si usted ha utilizado nuestras plataformas (ej. ENCUENTRAME.BO, 10.000 AIdeas) o se ha contactado mediante nuestros formularios, tiene derecho a solicitar la eliminación de sus datos.</p>
+      
+      <h3>¿Cómo solicitar la eliminación de sus datos?</h3>
+      <p>Para eliminar sus datos de nuestras bases de datos administradas (Firebase/GCP):</p>
+      <ul>
+        <li>Envíe un correo electrónico formal a <strong>andres.alberdi@aab1.website</strong> indicando en el asunto "Solicitud de Eliminación de Datos".</li>
+        <li>Por favor, envíe la solicitud desde el mismo correo electrónico que utilizó para contactarnos o registrarse en nuestras aplicaciones.</li>
+      </ul>
+
+      <h3>¿Qué datos se eliminan?</h3>
+      <p>Una vez procesada su solicitud, procederemos a eliminar de forma permanente:</p>
+      <ul>
+        <li>Información de contacto enviada a través de formularios (nombres, correos, descripciones de proyectos).</li>
+        <li>Cualquier perfil o cuenta asociada en plataformas como ENCUENTRAME.BO (incluyendo credenciales de OAuth).</li>
+      </ul>
+      <p><em>Nota:</em> AAB1 se reserva el derecho de retener comprobantes o facturas emitidas por concepto de servicios de consultoría, únicamente con fines de cumplimiento de la ley tributaria boliviana.</p>
+      
+      <h3 data-i18n="data_deletion_wa_title">Datos de WhatsApp</h3>
+      <p data-i18n="data_deletion_wa_p1">Si recibió mensajes nuestros por WhatsApp, conservamos: su número de teléfono, el identificador del mensaje asignado por Meta, su estado de entrega y las marcas de tiempo. Los códigos de verificación NO se guardan en texto claro en ningún momento: solo un hash con salt, que se elimina al vencer el código o al ser utilizado.</p>
+      <p data-i18n="data_deletion_wa_p2">Para solicitar la eliminación de estos datos, envíe un correo a andres.alberdi@aab1.website indicando el número de teléfono afectado en formato internacional. También puede responder BAJA por el mismo chat de WhatsApp para dejar de recibir mensajes de inmediato.</p>
+    </div>
+
+    <!-- INGLÉS -->
+    <div class="lang-section" id="en">
+      <h2>User Data Deletion Instructions (English)</h2>
+      <p>At AAB1, we respect your privacy and adhere to data protection standards (including regulations required by platforms such as Meta and Google). If you have used our platforms (e.g., ENCUENTRAME.BO, 10.000 AIdeas) or contacted us through our forms, you have the right to request the deletion of your data.</p>
+      
+      <h3>How to request data deletion?</h3>
+      <p>To delete your data from our managed databases (Firebase/GCP):</p>
+      <ul>
+        <li>Send a formal email to <strong>andres.alberdi@aab1.website</strong> with the subject line "Data Deletion Request".</li>
+        <li>Please send the request from the same email address you used to contact us or register on our applications.</li>
+      </ul>
+
+      <h3>What data gets deleted?</h3>
+      <p>Once your request is processed, we will permanently delete:</p>
+      <ul>
+        <li>Contact information submitted through forms (names, emails, project descriptions).</li>
+        <li>Any associated profile or account on platforms like ENCUENTRAME.BO (including OAuth credentials).</li>
+      </ul>
+      <p><em>Note:</em> AAB1 reserves the right to retain receipts or invoices issued for consulting services, solely for the purpose of compliance with Bolivian tax laws.</p>
+      
+      <h3 data-i18n="data_deletion_wa_title">WhatsApp Data</h3>
+      <p data-i18n="data_deletion_wa_p1">If you received messages from us via WhatsApp, we retain: your phone number, the message identifier assigned by Meta, its delivery status, and timestamps. Verification codes are NEVER stored in clear text at any time: only a salted hash is kept, which is deleted upon code expiration or usage.</p>
+      <p data-i18n="data_deletion_wa_p2">To request the deletion of this data, send an email to andres.alberdi@aab1.website indicating the affected phone number in international format. You can also reply STOP in the same WhatsApp chat to immediately stop receiving messages.</p>
+    </div>
+  </main>
+
+  <footer style="margin-top: 0; padding-bottom: 2rem;">
+    <div class="container footer-bottom" style="text-align: center; border-top: 1px solid var(--border-color); padding-top: 1rem; max-width: 800px; margin: 0 auto;">
+      <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="footer_rights">
+        &copy; 2026 AAB1 (Javier Andres Alberdi Baptista). Todos los derechos reservados. | <a href="/privacidad.html" style="color: var(--primary); text-decoration: none;">Política de Privacidad</a> | <a href="/condiciones.html" style="color: var(--primary); text-decoration: none;">Condiciones del Servicio</a> | <a href="/data-deletion.html" style="color: var(--primary); text-decoration: none;">Eliminación de Datos</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

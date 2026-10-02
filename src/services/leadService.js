@@ -26,7 +26,7 @@ export async function saveLead(leadData) {
     // Ignorar si localStorage está deshabilitado
   }
 
-  // 2. Enviar notificación directa por correo a alberdi.andres@gmail.com vía FormSubmit AJAX
+  // 2. Enviar notificación directa por correo a andres.alberdi@aab1.website vía FormSubmit AJAX
   sendEmailNotification(payload).catch(err => console.warn("Notificación de correo diferida:", err));
 
   // 3. Guardar registro en Cloud Firestore (Spark Always Free Tier) con timeout

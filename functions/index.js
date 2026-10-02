@@ -56,7 +56,6 @@ const AAB1_KNOWLEDGE_BASE = `
 
 5. CANALES DE CONTACTO OFICIALES DE AAB1:
 - Correo Principal para Negocios: andres.alberdi@aab1.website
-- Correos Directos con Javier Andres Alberdi Baptista: alberdi.andres@gmail.com / aalberdi@gmail.com
 - Teléfono / WhatsApp: (+591) 72047339
 - Sede de Operaciones: La Paz, Bolivia.
 - Sitio Web Oficial: https://andresalberdi.github.io/
