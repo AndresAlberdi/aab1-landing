@@ -62,7 +62,8 @@ describe('AAB1 Unit Test Battery', () => {
     const keys = [
       'wa_page_title', 'wa_h1', 'wa_updated', 'wa_meta_compliance_title',
       'wa_sec1_title', 'wa_sec1_p1', 'wa_sec2_title', 'wa_sec3_title',
-      'wa_sec4_title', 'wa_sec5_title', 'wa_sec6_title', 'wa_sec7_title'
+      'wa_sec4_title', 'wa_sec5_title', 'wa_sec6_title', 'wa_sec7_title',
+      'service_whatsapp_title', 'service_whatsapp_desc', 'service_whatsapp_link', 'tos_1_li4'
     ];
     for (const key of keys) {
       expect(translations.es[key]).toBeDefined();
