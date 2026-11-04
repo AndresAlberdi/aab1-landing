@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5F1DXQXWM7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5F1DXQXWM7");
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta_page_title">Ecosistema de Ingeniería AAB1: Arquitectura Agéntica, DevSecOps & Cloud | AAB1</title>
+  <meta name="description"
+    content="Arquitectura del Ecosistema de Ingeniería de AAB1: Fábrica de Software Agéntica con Meta-Agentes IA, Subagentes, DevSecOps Zero-Trust, CI/CD con federación de identidad OIDC y Gobernanza FinOps Multi-Nube en Google Cloud Platform (GCP), Firebase, AWS y OCI.">
+  <link rel="canonical" href="https://aab1.website/ecosistema-aab1.html">
+  <link rel="icon" type="image/png" href="assets/aab1-logo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .meta-hero {
+      padding: 130px 0 3rem 0;
+    }
+    .meta-section {
+      padding: 2.5rem 0;
+    }
+    .meta-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .meta-pill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.12);
+      color: var(--accent-light);
+      border: 1px solid rgba(59, 130, 246, 0.28);
+    }
+    .meta-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.75rem 0 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .meta-list li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .meta-list li .material-icons-round {
+      font-size: 1.05rem;
+      color: var(--accent-light);
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="glow-spot" style="top: 8%; left: 5%;"></div>
+  <div class="glow-spot" style="top: 45%; right: 5%;"></div>
+  <div class="glow-spot" style="top: 80%; left: 15%;"></div>
+
+  <!-- Header / Navegación -->
+  <header id="header" style="background: var(--nav-bg); backdrop-filter: blur(10px);">
+    <div class="container nav-container">
+      <a href="/index.html" class="logo">
+        <img src="assets/aab1-logo.png" alt="Logo AAB1" class="logo-img">
+        <span>AAB1</span>
+      </a>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="theme-toggle" aria-label="Cambiar idioma / Switch language"
+          title="Cambiar Idioma ES/EN" style="font-weight: 700; font-size: 0.82rem; padding: 0 0.6rem; gap: 0.3rem;">
+          <span class="material-icons-round" style="font-size: 1.1rem;">language</span>
+          <span id="lang-label">EN</span>
+        </button>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema día/noche" title="Cambiar Modo Día/Noche">
+          <span class="material-icons-round">light_mode</span>
+        </button>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/index.html" class="nav-link" data-i18n="privacy_nav_home">Inicio</a></li>
+        <li><a href="/index.html#gcp-solutions" class="nav-link" data-i18n="nav_gcp">Google Cloud</a></li>
+        <li><a href="/index.html#contacto" class="btn btn-primary"><span data-i18n="nav_contact">Contacto</span> <span class="material-icons-round">arrow_forward</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO DEL ECOSISTEMA DE INGENIERÍA AAB1 -->
+    <section class="meta-hero">
+      <div class="container">
+        <div class="glass-card" style="border-top: 4px solid #4285f4; padding: 2.5rem;">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div class="badge" style="background: rgba(66,133,244,0.15); color: #4285f4; border-color: rgba(66,133,244,0.35); margin-bottom: 0;">
+              <span class="material-icons-round" style="font-size: 1rem;">hub</span>
+              <span data-i18n="meta_hero_badge">Arquitectura Corporativa · Ingeniería de Software, IA & Multi-Cloud</span>
+            </div>
+            <span class="aws-badge" data-i18n="meta_hero_std_badge">🛡️ DevSecOps Zero-Trust · Federación OIDC · Multi-Cloud</span>
+          </div>
+
+          <h1 class="section-title" style="font-size: 2.3rem; margin-bottom: 0.75rem;">
+            <span data-i18n="meta_hero_title_1">Plano de Control Agéntico,</span>
+            <span class="gradient-text" data-i18n="meta_hero_title_gradient">DevSecOps & Gobernanza Cloud</span>
+          </h1>
+          <p style="font-size: 1.02rem; color: var(--text-muted); line-height: 1.7; max-width: 920px;" data-i18n="meta_hero_desc">El <strong>Ecosistema de Ingeniería de AAB1</strong> es la arquitectura corporativa que articula nuestra fábrica de software y operaciones en la nube. Integra coordinación asistida por <strong>Meta-Agentes de IA y Subagentes especializados</strong>, flujos de integración y despliegue <strong>CI/CD Zero-Trust en GitHub Actions</strong> con federación de identidad OIDC sin claves estáticas, <strong>gobernanza presupuestaria FinOps en tiempo real</strong> y cumplimiento normativo sobre <strong>Google Cloud Platform (GCP), Firebase, AWS y Oracle Cloud Infrastructure (OCI)</strong>.</p>
+
+          <div class="meta-pill-row">
+            <span class="meta-pill">Google Cloud Run & BigQuery</span>
+            <span class="meta-pill">Firebase (Hosting, Firestore, Functions, App Check)</span>
+            <span class="meta-pill">OCI Compute VMs (n8n · Odoo ERP · PostgreSQL)</span>
+            <span class="meta-pill">Workload Identity Federation (OIDC)</span>
+            <span class="meta-pill">Meta-Agentes & Subagentes IA (MCP)</span>
+            <span class="meta-pill">GitHub Actions CI/CD Zero-Trust</span>
+            <span class="meta-pill">Análisis SAST · SCA · IaC · Contenedores</span>
+            <span class="meta-pill">Políticas como Código & FinOps</span>
+            <span class="meta-pill">Terraform / OpenTofu IaC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILARES ARQUITECTÓNICOS DEL META-PROYECTO -->
+    <section class="meta-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-i18n="meta_pillars_title_1">Los 4 Pilares de Ingeniería del</span>
+            <span class="gradient-text" data-i18n="meta_pillars_title_gradient">Ecosistema AAB1</span>
+          </h2>
+          <p class="section-subtitle" data-i18n="meta_pillars_subtitle">Estándares de industria y prácticas de ingeniería verificables aplicadas de manera uniforme en cada plataforma, microservicio y solución SaaS.</p>
+        </div>
+
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+          <!-- Pilar 1: Meta-Agentes IA & Subagentes -->
+          <div class="glass-card" style="border-top: 3px solid #4285f4;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div class="service-icon-wrapper" style="margin-bottom: 0; background: rgba(66,133,244,0.15); color: #4285f4;">
+                <span class="material-icons-round">account_tree</span>
+              </div>
+              <span class="badge" style="margin-bottom: 0; font-size: 0.72rem;" data-i18n="meta_p1_badge">Protocolo MCP + Multi-Agente + ADRs</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="meta_p1_title">1. Meta-Agentes IA, Subagentes & Protocolo MCP</h3>
+            <ul class="meta-list">
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p1_li1"><strong>Orquestación Arquitectónica Centralizada:</strong> Un sistema de meta-agentes coordina la trazabilidad de requerimientos, la consistencia de reglas de dominio y los Registros de Decisiones de Arquitectura (ADRs) a lo largo del ciclo de vida del software.</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p1_li2"><strong>Subagentes con Separación de Funciones:</strong> Agentes especializados para validación de arquitectura hexagonal, contratos de interoperabilidad API, desarrollo guiado por pruebas (TDD) y auditoría automatizada de seguridad en cada revisión de código.</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p1_li3"><strong>Gobernanza con Supervisión Humana (Human-in-the-Loop):</strong> Los modelos de lenguaje operan bajo controles de acceso basados en roles (RBAC) mediante el estándar Model Context Protocol (MCP), requiriendo aprobación humana explícita para cambios críticos o pases a producción.</span></li>
+            </ul>
+          </div>
+
+          <!-- Pilar 2: Ingeniería DevSecOps & CI/CD Zero-Trust -->
+          <div class="glass-card" style="border-top: 3px solid #34a853;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div class="service-icon-wrapper" style="margin-bottom: 0; background: rgba(52,168,83,0.15); color: #34a853;">
+                <span class="material-icons-round">security</span>
+              </div>
+              <span class="badge" style="margin-bottom: 0; font-size: 0.72rem;" data-i18n="meta_p2_badge">DevSecOps Zero-Trust + Federación OIDC</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="meta_p2_title">2. Ingeniería DevSecOps, CI/CD & Federación OIDC</h3>
+            <ul class="meta-list">
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p2_li1"><strong>Autenticación Cloud sin Claves Estáticas:</strong> Los despliegues automatizados desde GitHub Actions hacia Google Cloud Platform y AWS utilizan <strong>Workload Identity Federation (OIDC)</strong> mediante credenciales efímeras de corta duración.</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p2_li2"><strong>Pipelines de Seguridad Automatizados:</strong> Análisis preventivo de secretos en código, evaluación estática de vulnerabilidades (SAST), composición de software (SCA), revisión de contenedores e infraestructura como código (IaC) y control de cambios con revisiones obligatorias.</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p2_li3"><strong>Endurecimiento en Tiempo de Ejecución:</strong> Aplicación de políticas de seguridad de contenido (<strong>CSP</strong>), transporte seguro estricto (<strong>HSTS</strong>), <strong>Firebase App Check</strong>, principio de menor privilegio y custodia de credenciales en gestores de secretos de nube (<strong>Secret Manager / KMS</strong>).</span></li>
+            </ul>
+          </div>
+
+          <!-- Pilar 3: FinOps Multi-Nube & Telemetría LLM -->
+          <div class="glass-card" style="border-top: 3px solid #fbbc05;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div class="service-icon-wrapper" style="margin-bottom: 0; background: rgba(251,188,5,0.15); color: #fbbc05;">
+                <span class="material-icons-round">insights</span>
+              </div>
+              <span class="badge" style="margin-bottom: 0; font-size: 0.72rem;" data-i18n="meta_p3_badge">Gobernanza FinOps + BigQuery</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="meta_p3_title">3. Gobernanza FinOps Multi-Nube & Telemetría IA</h3>
+            <ul class="meta-list">
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p3_li1"><strong>Control Presupuestario Transaccional:</strong> Gestión de cuotas y techos de gasto en tiempo real por organización, proyecto y entorno operativo (desarrollo, pruebas y producción).</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p3_li2"><strong>Analítica de Costos en Google BigQuery:</strong> Consolidación y exportación de métricas de consumo en la nube, monitoreo continuo de uso de tokens e inferencia de IA, y detección temprana de anomalías.</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p3_li3"><strong>Optimización Dinámica de Modelos (Right-Sizing):</strong> Enrutamiento inteligente entre modelos de IA (Google Gemini, Vertex AI y modelos fundacionales), almacenamiento en caché semántico y evaluación de políticas como código.</span></li>
+            </ul>
+          </div>
+
+          <!-- Pilar 4: Aprendizaje Continuo & Arquitectura Hexagonal -->
+          <div class="glass-card" style="border-top: 3px solid #a78bfa;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div class="service-icon-wrapper" style="margin-bottom: 0; background: rgba(139,92,246,0.15); color: #a78bfa;">
+                <span class="material-icons-round">auto_fix_high</span>
+              </div>
+              <span class="badge" style="margin-bottom: 0; font-size: 0.72rem;" data-i18n="meta_p4_badge">Mejora Continua + Arquitectura Hexagonal</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-title);" data-i18n="meta_p4_title">4. Mejora Continua & Portabilidad Multi-Nube</h3>
+            <ul class="meta-list">
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p4_li1"><strong>Circuito Cerrado de Calidad:</strong> Los hallazgos de auditorías técnicas y revisiones operativas se incorporan sistemáticamente como reglas automatizadas de integración continua y suites de pruebas de regresión.</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p4_li2"><strong>Arquitectura Hexagonal e IaC:</strong> Desacoplamiento estricto entre la lógica de negocio y los proveedores de nube, aplicando cifrado autenticado por organización y aprovisionamiento declarativo con Terraform / OpenTofu.</span></li>
+              <li><span class="material-icons-round">check_circle</span><span data-i18n="meta_p4_li3"><strong>Privacidad y Cumplimiento desde el Diseño:</strong> Gestión verificable de consentimientos, trazabilidad de auditoría inmutable (WORM) y controles de protección de datos alineados con estándares internacionales.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATRIZ DE MÓDULOS TRONCALES DEL ECOSISTEMA -->
+    <section class="meta-section" style="padding-bottom: 4rem;">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-i18n="meta_modules_title_1">Soluciones y Capacidades Troncales del</span>
+            <span class="gradient-text" data-i18n="meta_modules_title_gradient">Ecosistema AAB1</span>
+          </h2>
+          <p class="section-subtitle" data-i18n="meta_modules_subtitle">Capacidades modulares de grado empresarial que respaldan las plataformas comerciales y consultorías de AAB1 en Google Cloud, Firebase, AWS y OCI.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="glass-card" style="border-left: 3px solid #34a853;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_seg_title">Marco Corporativo DevSecOps & CI/CD Zero-Trust</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_seg_desc">Flujos de trabajo estandarizados en GitHub Actions, plantillas de endurecimiento web CSP/HSTS, federación de identidad OIDC y auditoría automatizada continua de código, dependencias, contenedores e infraestructura.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #fbbc05;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_finops_title">Plataforma de Gobernanza FinOps Cloud & IA</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_finops_desc">Motor de control presupuestario multi-proyecto, monitoreo de consumo de cuotas de Inteligencia Artificial en tiempo real y exportación analítica hacia Google BigQuery.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #4285f4;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_wam_title">Pasarela Empresarial WhatsApp Cloud API & OTP</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_wam_desc">Servicio modular en Google Cloud Run integrado con la API oficial de WhatsApp Business de Meta para notificaciones transaccionales, verificación segura mediante códigos de un solo uso (OTP) y respaldo SMS.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #38bdf8;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_rag_title">Motor Empresarial de Asistentes IA & RAG</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_rag_desc">Arquitectura de Generación Aumentada por Recuperación (RAG) con Google Gemini y Vertex AI, aislamiento semántico de datos por cliente, detección de idioma y controles de seguridad conversacional.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #10b981;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_qr_title">Pasarela de Cobros QR Simple & Conciliación</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_qr_desc">Componente transaccional para generación y verificación automatizada de cobros interoperables EMVCo QR Simple en Bolivia, integrado con APIs financieras, billeteras digitales y conciliación en Firebase.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #f43f5e;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_fenc_title">Motor SaaS de Firma Electrónica & Custodia WORM</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_fenc_desc">Plataforma B2B de firma digital de documentos PDF bajo estándar PAdES, gestión de claves asimétricas en servicios KMS de nube, sellado de tiempo certificado (TSA) y archivo inmutable de evidencias.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #8b5cf6;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_ekyc_title">Middleware de Onboarding Digital & Biometría (eKYC)</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_ekyc_desc">Servicio serverless de verificación documental e inspección biométrica de prueba de vida facial con arquitectura hexagonal portable entre Google Cloud y AWS, y cifrado de extremo a extremo.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #ec4899;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_learn_title">Sistema de Mejora Continua & Calidad de Software</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_learn_desc">Marco de aseguramiento de calidad que institucionaliza buenas prácticas OWASP, revisiones de arquitectura y pruebas automatizadas en todo el ciclo de desarrollo asistido por IA.</p>
+          </div>
+
+          <div class="glass-card" style="border-left: 3px solid #f59e0b;">
+            <h4 style="color: var(--text-title); margin-bottom: 0.4rem;" data-i18n="meta_mod_oci_title">Infraestructura en Oracle Cloud (n8n, Odoo ERP & PostgreSQL)</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);" data-i18n="meta_mod_oci_desc">Entornos de cómputo en máquinas virtuales empresariales sobre Oracle Cloud Infrastructure (OCI) que alojan la orquestación de flujos de automatización e IA en n8n, gestión empresarial Odoo ERP y bases de datos transaccionales PostgreSQL con respaldos automatizados.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="/index.html#gcp-solutions" class="btn btn-primary">
+            <span class="material-icons-round">arrow_back</span>
+            <span data-i18n="meta_btn_back_portfolio">Volver a la Cartera de Soluciones en el Inicio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="margin-top: 0; padding-bottom: 2rem;">
+    <div class="container footer-bottom" style="display: flex; flex-direction: column; gap: 1rem; text-align: center; border-top: 1px solid var(--border-color); padding-top: 1.5rem; max-width: 900px; margin: 0 auto;">
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;" data-i18n="footer_rights">&copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). Todos los derechos reservados. | <a href="/privacidad.html" style="color: var(--primary); text-decoration: none;">Política de Privacidad</a> | <a href="/condiciones.html" style="color: var(--primary); text-decoration: none;">Condiciones del Servicio</a> | <a href="/data-deletion.html" style="color: var(--primary); text-decoration: none;">Eliminación de Datos</a></p>
+      <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem; border-top: 1px solid var(--border-card); padding-top: 1rem;">
+        <p style="margin: 0;" data-i18n="footer_legal_1"><strong>Entidad Legal:</strong> AAB1 — JAVIER ANDRES ALBERDI BAPTISTA (Empresa Unipersonal registrada en Bolivia)</p>
+        <p style="margin: 0;" data-i18n="footer_legal_2"><strong>NIT (SIN) & Matrícula de Comercio (SEPREC):</strong> 2441214012 (Registro SEPREC N° 729427 — Vigente)</p>
+        <p style="margin: 0;" data-i18n="footer_legal_3"><strong>Actividades (CIIU / SIN):</strong> 6202000 Consultoría de informática | 6209920 Servicios tecnológicos de gestión y procesamiento en la nube | 6311000 / 6312000 Portales web y procesamiento de datos</p>
+        <p style="margin: 0;" data-i18n="footer_legal_4"><strong>Domicilio Legal y Fiscal:</strong> Zona Irpavi II, Condominio Eco Spa, Bloque 8, Piso 3, Dpto. A (Av. Los Trigales / Av. Los Eucaliptos S/N), La Paz, Murillo, Bolivia (Código Postal 0201) | Tel: +591 72047339</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

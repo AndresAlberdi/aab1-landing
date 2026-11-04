@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5F1DXQXWM7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5F1DXQXWM7");
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="encuentrame_page_title">Proyecto Estrella: ENCUENTRAME.BO (Find Me Bolivia) | AAB1</title>
+  <meta name="description"
+    content="ENCUENTRAME.BO (Find Me Bolivia) — Proyecto Estrella de AAB1, Semifinalista en AWS 10.000 AIdeas. Puente de proximidad inteligente e inclusión digital con IA sobre Firebase / Google Cloud y AWS.">
+  <link rel="canonical" href="https://aab1.website/encuentrame.html">
+  <link rel="icon" type="image/png" href="assets/aab1-logo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="glow-spot" style="top: 8%; left: 5%;"></div>
+  <div class="glow-spot" style="top: 45%; right: 5%;"></div>
+  <div class="glow-spot" style="top: 80%; left: 15%;"></div>
+
+  <!-- Header / Navegación -->
+  <header id="header" style="background: var(--nav-bg); backdrop-filter: blur(10px);">
+    <div class="container nav-container">
+      <a href="/index.html" class="logo">
+        <img src="assets/aab1-logo.png" alt="Logo AAB1" class="logo-img">
+        <span>AAB1</span>
+      </a>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="theme-toggle" aria-label="Cambiar idioma / Switch language"
+          title="Cambiar Idioma ES/EN" style="font-weight: 700; font-size: 0.82rem; padding: 0 0.6rem; gap: 0.3rem;">
+          <span class="material-icons-round" style="font-size: 1.1rem;">language</span>
+          <span id="lang-label">EN</span>
+        </button>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema día/noche" title="Cambiar Modo Día/Noche">
+          <span class="material-icons-round">light_mode</span>
+        </button>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/index.html" class="nav-link" data-i18n="privacy_nav_home">Inicio</a></li>
+        <li><a href="/index.html#gcp-solutions" class="nav-link" data-i18n="nav_gcp">Google Cloud</a></li>
+        <li><a href="/ecosistema-aab1.html" class="nav-link" data-i18n="nav_meta">Ecosistema & DevSecOps</a></li>
+        <li><a href="/index.html#contacto" class="btn btn-primary"><span data-i18n="nav_contact">Contacto</span> <span class="material-icons-round">arrow_forward</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- PROYECTO ESTRELLA (ENCUENTRAME.BO) -->
+    <section id="encuentrame" style="padding: 130px 0 4rem 0;">
+      <div class="container">
+        <div class="glass-card encuentrame-box">
+          <div class="encuentrame-header">
+            <div>
+              <div class="badge"><img src="assets/aab1-logo.png" class="badge-logo" alt=""> <span
+                  data-i18n="encuentrame_badge">Caso de Éxito Multi-Nube (GCP/Firebase & AWS)</span></div>
+              <h1 class="section-title" style="margin-bottom: 0.5rem;"><span data-i18n="encuentrame_title_1">Proyecto Estrella:</span> <span class="gradient-text"
+                  data-i18n="encuentrame_title_gradient">ENCUENTRAME.BO</span></h1>
+              <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="encuentrame_subtitle">(Find Me Bolivia) — Puente de proximidad inteligente e inclusión digital para la economía de base en Latinoamérica, integrando Firebase / Google Cloud y servicios de IA en AWS.</p>
+            </div>
+            <span class="aws-badge" data-i18n="encuentrame_aws_badge">🏆 Semifinalist AWS 10.000 AIdeas</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+            <div>
+              <h4 style="color: var(--text-title); margin-bottom: 0.5rem;" data-i18n="encuentrame_challenge_title">El Desafío: La "Economía Invisible"</h4>
+              <p style="font-size: 0.92rem; margin-bottom: 1rem; color: var(--text-muted);"
+                data-i18n="encuentrame_challenge_desc">En Bolivia, más del 80% de la economía es informal. Miles de puestos de mercado y ferias ambulantes son "fantasmas digitales" que cambian de ubicación diariamente sin figurar en Google Maps, obligando al comprador a buscar a ciegas y privando al vendedor de un historial contable para acceder a microcréditos bancarios.</p>
+
+              <h4 style="color: var(--text-title); margin-bottom: 0.5rem;" data-i18n="encuentrame_solution_title">La Solución: Smart Check-in con IA</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted);" data-i18n="encuentrame_solution_desc"><strong>encuentrame.bo</strong> permite al vendedor abrir su puesto tomando una simple fotografía con su celular (validada con <strong>Amazon Rekognition</strong>) e ingresar su inventario hablando por voz (procesado por <strong>Amazon Bedrock</strong> como un "CFO en el bolsillo"), respaldado por una arquitectura web y de datos productivos en <strong>Firebase y Google Cloud Platform</strong>.</p>
+            </div>
+
+            <div>
+              <h4 style="color: var(--text-title); margin-bottom: 0.75rem;" data-i18n="encuentrame_arch_title">Arquitectura Serverless Multi-Nube (GCP/Firebase & AWS)</h4>
+              <div class="encuentrame-features">
+                <div class="encuentrame-feat-card">
+                  <h5 style="color: var(--accent-light); font-size: 0.9rem;">Amazon Rekognition</h5>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="encuentrame_rekognition_desc">Validación por visión artificial de fotos del puesto para comprobar apertura y categorizar productos.</p>
+                </div>
+                <div class="encuentrame-feat-card">
+                  <h5 style="color: var(--accent-light); font-size: 0.9rem;">Amazon Bedrock (GenAI)</h5>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="encuentrame_bedrock_desc">Interfaz voice-first que convierte audios hablados en inventario estructurado en tiempo real.</p>
+                </div>
+                <div class="encuentrame-feat-card">
+                  <h5 style="color: var(--accent-light); font-size: 0.9rem;">Firebase / GCP & AWS Serverless</h5>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="encuentrame_lambda_desc">Ecosistema web y de datos productivos en Firebase y Google Cloud Platform integrado con AWS Lambda & Amplify de costo cero en reposo y alto escalamiento.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <a href="https://builder.aws.com/content/39bBip3BFZ1dQG8FfVaVYsqO9us/aideas-encuentramebo-find-me-bolivia"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  style="font-size: 0.85rem; padding: 0.6rem 1rem;">
+                  <span data-i18n="btn_aws_builder">Leer en AWS Builders</span> <span
+                    class="material-icons-round">open_in_new</span>
+                </a>
+
+                <!-- BOTÓN VIDEO YOUTUBE ENCUENTRAME.BO CON LINK DINÁMICO ES / EN -->
+                <a id="encuentrame-yt-link" href="https://youtu.be/4osZAoSnjtQ?si=CrHoEZDQ98MBsLVI" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.6rem 1rem;">
+                  <span data-i18n="btn_youtube_video">Ver Video Presentación</span> <span
+                    class="material-icons-round">play_arrow</span>
+                </a>
+              </div>
+
+              <!-- SOCIOS Y DESARROLLADORES DE ENCUENTRAME.BO -->
+              <div style="margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.5rem;">
+                <h4 style="color: var(--text-title); margin-bottom: 0.25rem; font-size: 1.05rem;"
+                  data-i18n="encuentrame_team_title">Socios & Desarrolladores de ENCUENTRAME.BO</h4>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;"
+                  data-i18n="encuentrame_team_subtitle">Equipo multidisciplinario e innovación tecnológica boliviana detrás del proyecto estrella:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0.85rem;">
+                  <a href="https://www.linkedin.com/in/andres-alberdi-baptista/" target="_blank"
+                    rel="noopener noreferrer" class="link-card" style="padding: 0.75rem;">
+                    <div class="link-icon" style="background: rgba(59,130,246,0.15); color: #60a5fa;"><span
+                        class="material-icons-round">person</span></div>
+                    <div>
+                      <h5 style="font-size: 0.88rem; margin-bottom: 0.15rem; color: var(--text-title);"
+                        data-i18n="team_andres_title">Javier Andrés Alberdi Baptista</h5>
+                      <p style="font-size: 0.72rem; color: var(--accent-light); font-weight: 600;"
+                        data-i18n="team_andres_role">Fundador & Líder de Arquitectura</p>
+                      <p style="font-size: 0.68rem; color: var(--text-muted);">linkedin.com/in/andres-alberdi-baptista
+                      </p>
+                    </div>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/cmrnda/" target="_blank" rel="noopener noreferrer"
+                    class="link-card" style="padding: 0.75rem;">
+                    <div class="link-icon" style="background: rgba(16,185,129,0.15); color: #34d399;"><span
+                        class="material-icons-round">code</span></div>
+                    <div>
+                      <h5 style="font-size: 0.88rem; margin-bottom: 0.15rem; color: var(--text-title);"
+                        data-i18n="team_carlos_title">Carlos Miranda</h5>
+                      <p style="font-size: 0.72rem; color: var(--accent-light); font-weight: 600;"
+                        data-i18n="team_carlos_role">Socio & Desarrollador</p>
+                      <p style="font-size: 0.68rem; color: var(--text-muted);">linkedin.com/in/cmrnda</p>
+                    </div>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/luanhuanca/" target="_blank" rel="noopener noreferrer"
+                    class="link-card" style="padding: 0.75rem;">
+                    <div class="link-icon" style="background: rgba(139,92,246,0.15); color: #a78bfa;"><span
+                        class="material-icons-round">terminal</span></div>
+                    <div>
+                      <h5 style="font-size: 0.88rem; margin-bottom: 0.15rem; color: var(--text-title);"
+                        data-i18n="team_luan_title">Luan Huanca</h5>
+                      <p style="font-size: 0.72rem; color: var(--accent-light); font-weight: 600;"
+                        data-i18n="team_luan_role">Socio & Desarrollador</p>
+                      <p style="font-size: 0.68rem; color: var(--text-muted);">linkedin.com/in/luanhuanca</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 2.5rem;">
+            <a href="/index.html#gcp-solutions" class="btn btn-primary">
+              <span class="material-icons-round">arrow_back</span>
+              <span data-i18n="meta_btn_back_portfolio">Volver a la Cartera de Soluciones en el Inicio</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="margin-top: 0; padding-bottom: 2rem;">
+    <div class="container footer-bottom" style="display: flex; flex-direction: column; gap: 1rem; text-align: center; border-top: 1px solid var(--border-color); padding-top: 1.5rem; max-width: 900px; margin: 0 auto;">
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;" data-i18n="footer_rights">&copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). Todos los derechos reservados. | <a href="/privacidad.html" style="color: var(--primary); text-decoration: none;">Política de Privacidad</a> | <a href="/condiciones.html" style="color: var(--primary); text-decoration: none;">Condiciones del Servicio</a> | <a href="/data-deletion.html" style="color: var(--primary); text-decoration: none;">Eliminación de Datos</a></p>
+      <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem; border-top: 1px solid var(--border-card); padding-top: 1rem;">
+        <p style="margin: 0;" data-i18n="footer_legal_1"><strong>Entidad Legal:</strong> AAB1 — JAVIER ANDRES ALBERDI BAPTISTA (Empresa Unipersonal registrada en Bolivia)</p>
+        <p style="margin: 0;" data-i18n="footer_legal_2"><strong>NIT (SIN) & Matrícula de Comercio (SEPREC):</strong> 2441214012 (Registro SEPREC N° 729427 — Vigente)</p>
+        <p style="margin: 0;" data-i18n="footer_legal_3"><strong>Actividades (CIIU / SIN):</strong> 6202000 Consultoría de informática | 6209920 Servicios tecnológicos de gestión y procesamiento en la nube | 6311000 / 6312000 Portales web y procesamiento de datos</p>
+        <p style="margin: 0;" data-i18n="footer_legal_4"><strong>Domicilio Legal y Fiscal:</strong> Zona Irpavi II, Condominio Eco Spa, Bloque 8, Piso 3, Dpto. A (Av. Los Trigales / Av. Los Eucaliptos S/N), La Paz, Murillo, Bolivia (Código Postal 0201) | Tel: +591 72047339</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
+

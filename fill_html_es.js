@@ -1,35 +1,30 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { translations } from './src/i18n/translations.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Import translations
-import { translations } from './src/i18n/translations.js';
 const es = translations.es;
+const htmlFiles = ['index.html', 'privacidad.html', 'condiciones.html', 'mensajeria-whatsapp.html', 'ecosistema-aab1.html', 'encuentrame.html'];
 
-const htmlPath = path.join(__dirname, 'privacidad.html');
-let html = fs.readFileSync(htmlPath, 'utf8');
+// Match opening tag with data-i18n="key" and its corresponding closing tag of the same tag name
+const regex = /(<([a-z0-9]+)\b[^>]*\bdata-i18n="([^"]+)"[^>]*>)([\s\S]*?)(<\/\2>)/gi;
 
-// Replace all instances of data-i18n="key">... or data-i18n="key">
-// using regex
-html = html.replace(/data-i18n="([^"]+)"(>)(.*?)(<\/[a-z0-9]+>)?/g, (match, key, gt, content, endTag) => {
-    // some elements like title have content inside, others might be empty
-    // Actually, a better regex for HTML tags:
-    // We want to replace the content inside the tag that has data-i18n="key"
-    return match;
-});
+for (const file of htmlFiles) {
+  const htmlPath = path.join(__dirname, file);
+  if (!fs.existsSync(htmlPath)) continue;
+  let html = fs.readFileSync(htmlPath, 'utf8');
 
-// Let's use a simpler approach since we know the HTML structure:
-// <tag data-i18n="key"></tag>
-const regex = /(<[^>]+data-i18n="([^"]+)"[^>]*>)(.*?)(<\/[^>]+>)/g;
-html = html.replace(regex, (match, openTag, key, currentContent, closeTag) => {
+  html = html.replace(regex, (match, openTag, tagName, key, currentContent, closeTag) => {
     if (es[key]) {
-        return `${openTag}${es[key]}${closeTag}`;
+      return `${openTag}${es[key]}${closeTag}`;
     }
     return match;
-});
+  });
 
-fs.writeFileSync(htmlPath, html, 'utf8');
-console.log("HTML updated successfully.");
+  fs.writeFileSync(htmlPath, html, 'utf8');
+}
+
+console.log("HTML files synchronized with Spanish translations successfully.");

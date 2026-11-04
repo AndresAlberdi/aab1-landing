@@ -2,6 +2,7 @@
 set -e
 
 PROJECT_ID="aab1-landing"
+FIREBASE_ACCOUNT="alberdi.andres@gmail.com"
 echo "=== MODO DE DESPLIEGUE: PRODUCCIÓN (AAB1-landing) ==="
 
 echo "=== [1/4] Ejecutando pruebas unitarias locales ==="
@@ -16,7 +17,7 @@ fi
 
 echo "=== [3/4] Compilando y publicando en Firebase ($PROJECT_ID) ==="
 npm run build
-npx -y firebase-tools@latest deploy --project "$PROJECT_ID" --only hosting,functions --force
+firebase deploy --project "$PROJECT_ID" --account "$FIREBASE_ACCOUNT" --only hosting --force
 
 echo "=== [4/4] Confirmando y subiendo cambios a GitHub ==="
 git add .

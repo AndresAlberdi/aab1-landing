@@ -15,6 +15,7 @@
   <title data-i18n="wa_page_title">Servicio de Mensajería por WhatsApp | AAB1</title>
   <meta name="description"
     content="Servicio de mensajería por WhatsApp de AAB1 para empresas clientes sobre la WhatsApp Business Cloud API de Meta Platforms. Avisos, confirmaciones, códigos de verificación y atención de consultas.">
+  <link rel="canonical" href="https://aab1.website/mensajeria-whatsapp.html">
   <link rel="icon" type="image/png" href="assets/aab1-logo.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -100,7 +101,7 @@
         </button>
       </div>
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="/index.html" class="nav-link">Volver al Inicio</a></li>
+        <li><a href="/index.html" class="nav-link" data-i18n="privacy_nav_home">Inicio</a></li>
       </ul>
     </div>
   </header>
@@ -136,14 +137,14 @@
     </ul>
 
     <h2 data-i18n="wa_sec4_title">4. Tratamiento y protección de datos (AAB1 como encargado)</h2>
-    <p data-i18n="wa_sec4_p1"><strong>AAB1 actúa como encargado del tratamiento; la empresa cliente es la responsable de los datos de sus contactos.</strong> Esta separación de roles es coherente con el apartado 2.5 de nuestra <a href="/privacidad.html">Política de Privacidad</a>.</p>
+    <p data-i18n="wa_sec4_p1"><strong>AAB1 actúa como encargado del tratamiento; la empresa cliente es la responsable de los datos de sus contactos.</strong> Esta separación de roles es coherente con el apartado 2.5 de nuestra <a href="/privacidad.html" style="color: var(--primary); text-decoration: underline;">Política de Privacidad</a>.</p>
     <p data-i18n="wa_sec4_p2">Usamos los datos que recibimos de Meta solo para enviar y recibir los mensajes de cada cliente en su nombre, crear sus plantillas de mensaje y mostrarle el estado de sus envíos.</p>
     <ul>
       <li data-i18n="wa_sec4_li1"><strong>Separación de datos:</strong> Los datos de un cliente se mantienen estrictamente separados de los de otro cliente en entornos aislados.</li>
       <li data-i18n="wa_sec4_li2"><strong>Prohibición de comercialización:</strong> No vendemos, no alquilamos ni usamos los datos para otros fines ajenos a la prestación técnica del servicio.</li>
       <li data-i18n="wa_sec4_li3"><strong>Seguridad en códigos de verificación:</strong> Los códigos de verificación nunca se almacenan en texto claro; únicamente se almacena un resumen criptográfico con sal (hash SHA-256) que expira a los 5 minutos y se elimina automáticamente.</li>
     </ul>
-    <p data-i18n="wa_sec4_policies">Para consultar los detalles de nuestros compromisos de seguridad y privacidad, revise nuestra <a href="/privacidad.html">Política de Privacidad</a>, las <a href="/condiciones.html">Condiciones del Servicio</a> y las instrucciones para la <a href="/data-deletion.html">Eliminación de Datos</a>.</p>
+    <p data-i18n="wa_sec4_policies">Para consultar los detalles de nuestros compromisos de seguridad y privacidad, revise nuestra <a href="/privacidad.html" style="color: var(--primary); text-decoration: underline;">Política de Privacidad</a>, las <a href="/condiciones.html" style="color: var(--primary); text-decoration: underline;">Condiciones del Servicio</a> y las instrucciones para la <a href="/data-deletion.html" style="color: var(--primary); text-decoration: underline;">Eliminación de Datos</a>.</p>
 
     <h2 data-i18n="wa_sec5_title">5. Reglas de la plataforma de Meta y servicios futuros</h2>
     <ul>
@@ -160,14 +161,18 @@
     </ul>
 
     <h2 data-i18n="wa_sec7_title">7. Datos de la empresa</h2>
-    <p data-i18n="wa_sec7_content"><strong>AAB1</strong> — Empresa Unipersonal Boliviana<br><strong>Titular:</strong> Javier Andres Alberdi Baptista<br><strong>Domicilio:</strong> La Paz, Bolivia<br><strong>Correo electrónico:</strong> andres.alberdi@aab1.website<br><strong>Sitio web:</strong> <a href="https://aab1.website">https://aab1.website</a></p>
+    <p data-i18n="wa_sec7_content"><strong>AAB1</strong> — Empresa Unipersonal Boliviana (JAVIER ANDRES ALBERDI BAPTISTA)<br><strong>NIT (SIN) & Matrícula SEPREC:</strong> 2441214012 (Registro SEPREC N° 729427)<br><strong>Titular:</strong> Javier Andrés Alberdi Baptista<br><strong>Domicilio Legal y Fiscal:</strong> Zona Irpavi II, Condominio Eco Spa, Bloque 8, Piso 3, Dpto. A (Av. Los Trigales / Av. Los Eucaliptos S/N), La Paz, Bolivia — CP 0201<br><strong>Teléfono / WhatsApp:</strong> +591 72047339<br><strong>Correo electrónico:</strong> andres.alberdi@aab1.website<br><strong>Sitio web:</strong> <a href="https://aab1.website" style="color: var(--primary); text-decoration: underline;">https://aab1.website</a></p>
   </main>
 
   <footer style="margin-top: 0; padding-bottom: 2rem;">
-    <div class="container footer-bottom" style="text-align: center; border-top: 1px solid var(--border-color); padding-top: 1rem; max-width: 800px; margin: 0 auto;">
-      <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="footer_rights">
-        &copy; 2026 AAB1 (Javier Andres Alberdi Baptista). Todos los derechos reservados. | <a href="/privacidad.html" style="color: var(--primary); text-decoration: none;">Política de Privacidad</a> | <a href="/condiciones.html" style="color: var(--primary); text-decoration: none;">Condiciones del Servicio</a> | <a href="/data-deletion.html" style="color: var(--primary); text-decoration: none;">Eliminación de Datos</a>
-      </p>
+    <div class="container footer-bottom" style="display: flex; flex-direction: column; gap: 1rem; text-align: center; border-top: 1px solid var(--border-color); padding-top: 1.5rem; max-width: 900px; margin: 0 auto;">
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;" data-i18n="footer_rights">&copy; 2026 AAB1 (Javier Andrés Alberdi Baptista). Todos los derechos reservados. | <a href="/privacidad.html" style="color: var(--primary); text-decoration: none;">Política de Privacidad</a> | <a href="/condiciones.html" style="color: var(--primary); text-decoration: none;">Condiciones del Servicio</a> | <a href="/data-deletion.html" style="color: var(--primary); text-decoration: none;">Eliminación de Datos</a></p>
+      <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem; border-top: 1px solid var(--border-card); padding-top: 1rem;">
+        <p style="margin: 0;" data-i18n="footer_legal_1"><strong>Entidad Legal:</strong> AAB1 — JAVIER ANDRES ALBERDI BAPTISTA (Empresa Unipersonal registrada en Bolivia)</p>
+        <p style="margin: 0;" data-i18n="footer_legal_2"><strong>NIT (SIN) & Matrícula de Comercio (SEPREC):</strong> 2441214012 (Registro SEPREC N° 729427 — Vigente)</p>
+        <p style="margin: 0;" data-i18n="footer_legal_3"><strong>Actividades (CIIU / SIN):</strong> 6202000 Consultoría de informática | 6209920 Servicios tecnológicos de gestión y procesamiento en la nube | 6311000 / 6312000 Portales web y procesamiento de datos</p>
+        <p style="margin: 0;" data-i18n="footer_legal_4"><strong>Domicilio Legal y Fiscal:</strong> Zona Irpavi II, Condominio Eco Spa, Bloque 8, Piso 3, Dpto. A (Av. Los Trigales / Av. Los Eucaliptos S/N), La Paz, Murillo, Bolivia (Código Postal 0201) | Tel: +591 72047339</p>
+      </div>
     </div>
   </footer>
 
