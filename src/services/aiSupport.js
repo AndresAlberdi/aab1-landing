@@ -12,7 +12,7 @@ export const AAB1_KNOWLEDGE_BASE = `
 - AAB1 es una empresa unipersonal boliviana debidamente registrada en Impuestos Nacionales y SEPREC.
 - Propietario y Fundador: Javier Andres Alberdi Baptista.
 - Formación del Fundador: Licenciado en Matemática por la Universidad Mayor de San Andrés (UMSA, Título en Provisión Nacional). Formación ejecutiva mediante el Middle Management Program del INCAE Business School y más de 50 certificaciones ejecutivas, tecnológicas y de gestión.
-- Experiencia: Consultor Senior Independiente desde 2009. Ex Gerente General en empresas de TI y ex líder estratégico en reconocidas empresas tecnológicas bolivianas. Conferencista en Congresos Bolivianos de Matemática (SOBOLMAT) por más de 15 años.
+- Experiencia: Consultor Senior Independiente desde 2009 en Bolivia, Estados Unidos, Sudamérica y Europa. Ex Gerente General en empresas de TI y ex líder estratégico en reconocidas empresas tecnológicas bolivianas. Conferencista en Congresos Bolivianos de Matemática (SOBOLMAT) por más de 15 años.
 - Certificaciones Destacadas: AWS Re/Start Graduate, Google Cloud Platform, AWS Generative AI, Scrum Master Certified.
 
 2. PORTAFOLIO DE SERVICIOS (ACTIVIDADES ECONÓMICAS):
@@ -169,8 +169,8 @@ export function queryLocalAAB1RAG(rawQuery, forcedLang = null) {
 
   if (query.includes('quien') || query.includes('who') || query.includes('andres') || query.includes('alberdi') || query.includes('fundador') || query.includes('founder')) {
     return currentLang === 'en'
-      ? "👨‍💻 **Javier Andres Alberdi Baptista** is the founder of AAB1. He holds a B.S. in Mathematics from UMSA (National Diploma), executive training from INCAE, over 50 certifications, and AWS Re/Start Graduate & Google Cloud Platform badges. Keynote speaker at SOBOLMAT for 15+ years."
-      : "👨‍💻 **Javier Andres Alberdi Baptista** es el fundador de AAB1. Es Licenciado en Matemática por la UMSA (Título en Provisión Nacional), con formación ejecutiva en INCAE, más de 50 certificaciones y reconocimientos como AWS Re/Start Graduate y Google Cloud Platform. Conferencista en SOBOLMAT por más de 15 años.";
+      ? "👨‍💻 **Javier Andres Alberdi Baptista** is the founder of AAB1 and a Senior Independent Consultant across Bolivia, the United States, South America, and Europe. He holds a B.S. in Mathematics from UMSA (National Diploma), executive training from INCAE, over 50 certifications, and AWS Re/Start Graduate & Google Cloud Platform badges. Keynote speaker at SOBOLMAT for 15+ years."
+      : "👨‍💻 **Javier Andres Alberdi Baptista** es el fundador de AAB1 y Consultor Senior Independiente en Bolivia, Estados Unidos, Sudamérica y Europa. Es Licenciado en Matemática por la UMSA (Título en Provisión Nacional), con formación ejecutiva en INCAE, más de 50 certificaciones y reconocimientos como AWS Re/Start Graduate y Google Cloud Platform. Conferencista en SOBOLMAT por más de 15 años.";
   }
 
   if (query.includes('encuentrame') || query.includes('ideas') || query.includes('aws') || query.includes('rekognition') || query.includes('bedrock')) {

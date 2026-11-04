@@ -25,7 +25,7 @@ export const translations = {
     founder_subtitle: "Licenciado en Matemática por la UMSA, consultor senior con trayectoria ejecutiva en alta gerencia y certificaciones internacionales en Google Cloud Platform (GCP) y AWS.",
     founder_bio_title: "Trayectoria & Formación",
     founder_bio_p1: "<strong>Javier Andrés Alberdi Baptista</strong> es Licenciado en Matemática por la Universidad Mayor de San Andrés (Título en Provisión Nacional), cuenta con formación ejecutiva en el <em>Middle Management Program</em> del <strong>INCAE Business School</strong> y más de 50 certificaciones en diferentes áreas ejecutivas, tecnológicas y de gestión.",
-    founder_bio_p2: "Desde 2009 se desempeña como Consultor Senior Independiente en Bolivia y Sudamérica. Ha ejercido roles directivos como <strong>Gerente General</strong> y diversas gerencias estratégicas en reconocidas empresas tecnológicas bolivianas. Es <strong>conferencista permanente</strong> en los Congresos Bolivianos de Matemática (SOBOLMAT) por más de 15 años.",
+    founder_bio_p2: "Desde 2009 se desempeña como Consultor Senior Independiente en Bolivia, Estados Unidos, Sudamérica y Europa. Ha ejercido roles directivos como <strong>Gerente General</strong> y diversas gerencias estratégicas en reconocidas empresas tecnológicas bolivianas. Es <strong>conferencista permanente</strong> en los Congresos Bolivianos de Matemática (SOBOLMAT) por más de 15 años.",
     
     links_title: "Enlaces Oficiales & Redes",
     links_subtitle: "Explora las publicaciones académicas, perfil profesional y contenidos de divulgación de Javier Andrés Alberdi Baptista:",
@@ -448,7 +448,7 @@ export const translations = {
     founder_subtitle: "Bachelor's degree in Mathematics from UMSA, senior consultant with C-level executive track record and Google Cloud Platform (GCP) and AWS international certifications.",
     founder_bio_title: "Career & Education",
     founder_bio_p1: "<strong>Javier Andrés Alberdi Baptista</strong> holds a B.S. in Mathematics from Universidad Mayor de San Andrés (National Diploma), executive training in the <em>Middle Management Program</em> at <strong>INCAE Business School</strong>, and over 50 certifications across executive, technological, and management domains.",
-    founder_bio_p2: "Since 2009, he has served as a Senior Independent Consultant across South America. He has held executive roles as <strong>General Manager</strong> and strategic management positions in leading Bolivian tech firms. He has been a permanent speaker at Bolivian Mathematics Congresses (SOBOLMAT) for over 15 years.",
+    founder_bio_p2: "Since 2009, he has served as a Senior Independent Consultant across Bolivia, the United States, South America, and Europe. He has held executive roles as <strong>General Manager</strong> and strategic management positions in leading Bolivian tech firms. He has been a permanent speaker at Bolivian Mathematics Congresses (SOBOLMAT) for over 15 years.",
     
     links_title: "Official Links & Profiles",
     links_subtitle: "Explore Javier Andrés Alberdi Baptista's academic publications, professional profile, and research outreach:",
