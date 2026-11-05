@@ -100,6 +100,7 @@ describe('AAB1 Unit Test Battery', () => {
       'gcp_novuchat_title', 'gcp_novuchat_desc', 'gcp_hipatia_title', 'gcp_hipatia_desc',
       'gcp_slt_title', 'gcp_slt_desc', 'gcp_kepler_title', 'gcp_kepler_desc',
       'gcp_wally_title', 'gcp_wally_desc', 'gcp_pretso_title', 'gcp_pretso_desc',
+      'gcp_moodle_badge', 'gcp_moodle_title', 'gcp_moodle_desc',
       'gcp_wam_title', 'gcp_wam_desc', 'gcp_rag_title', 'gcp_rag_desc',
       'gcp_qr_title', 'gcp_qr_desc', 'gcp_fenc_title', 'gcp_fenc_desc',
       'gcp_onboarding_title', 'gcp_onboarding_desc', 'gcp_seg_title', 'gcp_seg_desc',
@@ -112,6 +113,9 @@ describe('AAB1 Unit Test Battery', () => {
       'meta_mod_qr_title', 'meta_mod_fenc_title', 'meta_mod_ekyc_title', 'meta_mod_learn_title',
       'meta_mod_oci_title', 'meta_mod_oci_desc',
       'collab_novuchat_title', 'collab_novuchat_desc',
+      'collab_zeyo_title', 'collab_zeyo_desc',
+      'collab_skai_title', 'collab_skai_desc',
+      'collab_morris_title', 'collab_morris_desc',
       'contact_phone_val',
       'footer_legal_1', 'footer_legal_2', 'footer_legal_3', 'footer_legal_4'
     ];
@@ -133,6 +137,12 @@ describe('AAB1 Unit Test Battery', () => {
     expect(indexHtml).toContain('https://hipatiabo.com/');
     expect(indexHtml).toContain('https://segurolotengo.com/');
     expect(indexHtml).toContain('https://kepler-stem.web.app/');
+    expect(indexHtml).toContain('https://www.unive.it/');
+    expect(indexHtml).toContain('https://zeyo.io/');
+    expect(indexHtml).toContain('https://www.skaisolutions.ai/');
+    expect(indexHtml).toContain('https://morrisopazo.com/');
+    expect(indexHtml).toContain('Moodle');
+    expect(indexHtml).toContain('Stripe');
     expect(indexHtml).toContain('/ecosistema-aab1.html');
     expect(indexHtml).toContain('/encuentrame.html');
     expect(indexHtml).not.toContain('<section id="encuentrame">');
